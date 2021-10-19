@@ -182,6 +182,8 @@
     <Content Include="android-chrome-192x192.png" />
     <Content Include="android-chrome-512x512.png" />
     <Content Include="apple-touch-icon.png" />
+    <Content Include="Content\Images\Site\Svg\BD-Body-01.png" />
+    <Content Include="Content\Images\Site\Svg\BD-Body-01.svg" />
     <Content Include="Content\Images\Site\Svg\BD-Head-02.png" />
     <Content Include="Content\Images\Site\Svg\BD-Head-02.svg" />
     <Content Include="Content\Images\Site\Svg\BD-Head-Right-01.svg" />
@@ -194,6 +196,7 @@
     <Content Include="Content\Images\Site\Svg\BD-Head-Right-01.ai" />
     <Content Include="Content\Images\Site\Svg\BD-Head-Right-02.ai" />
     <Content Include="Content\Images\Site\Svg\BD-Head-Right-04.ai" />
+    <Content Include="Content\Images\Site\Svg\BD-Body-01.ai" />
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>
@@ -214,6 +217,9 @@
     <Content Include="Content\Images\Site\Icons\favicon-32x32.png" />
     <Content Include="Content\Images\Site\Icons\favicon.ico" />
     <Content Include="Content\Images\Site\Svg\Bulldog-body.svg" />
+    <Content Include="Content\Images\Site\Svg\FB-Home.svg" />
+    <Content Include="Content\Images\Site\Svg\FB-Square.svg" />
+    <Content Include="Content\Images\Site\Svg\Google-Square.svg" />
     <Content Include="favicon-16x16.png" />
     <Content Include="favicon-32x32.png" />
     <Content Include="Scripts\sitescripts.js" />

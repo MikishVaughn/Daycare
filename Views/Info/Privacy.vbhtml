@@ -5,12 +5,12 @@
 End Code
 
 <!-- Privacy Policy -->
-<div style="font-family: 'Knockout 31 4r', HelveticaNeue-CondensedBold, Helvetica, Arial, sans-serif; font-weight: 400; color: white; margin-left: auto; margin-right: auto; text-align: center; max-width:90%;">
+<div style="font-family: 'Knockout 31 4r', HelveticaNeue-CondensedBold, Helvetica, Arial, sans-serif; font-weight: 400; color: black; margin-left: auto; margin-right: auto; text-align: center; max-width: 90%;">
 
     <h1 id="myBox">Privacy Policy</h1>
 
     <!-- Policy Content -->
-    <div style="padding: 5px; width: 98%; text-align: left; color: white;">
+    <div style="padding: 5px; width: 98%; text-align: left; color: black;">
         <div style="padding: 5px; width: 98%; text-align: left;">
             <p style="font-weight: 500; font-size: 18px; line-height: 22px;">
                 This privacy policy has been compiled to better serve those who are concerned with how their "Personally identifiable information" (PII) is being used online. PII, as used in US privacy law and information security, is information that can be used on its own or with other information to identify, contact, or locate a single person, or to identify an individual in context. Please read our privacy policy carefully to get a clear understanding of how we collect, use, protect or otherwise handle your Personally Identifiable Information in accordance with our website.
@@ -80,7 +80,7 @@ End Code
         <div class="p_div">
             Google"s advertising requirements can be summed up by Google"s Advertising
             Principles. They are put in place to provide a positive experience for users.
-            <button @*style="color: white; text-decoration-line:underline; text-shadow: 1px 1px 2px black, 2px 2px 8px #994300;"*@ id="newTab" onclick="newTab('https://support.google.com/adwordspolicy/answer/1316548?hl=en')">Click Here for More Info.</button>
+            <button id="newTab" onclick="newTab('https://support.google.com/adwordspolicy/answer/1316548?hl=en')">Click Here for More Info.</button>
         </div>
         <div class="p_div">
             We use Google AdSense Advertising on our website. Google, as a third party vendor,
@@ -114,7 +114,7 @@ End Code
             the world) that operates websites collecting personally identifiable information
             from California consumers to post a conspicuous privacy policy on its website
             stating exactly the information being collected and those individuals with whom
-            it is being shared, and to comply with this policy. -  <button @*style="color: white; text-decoration-line:underline; text-shadow: 1px 1px 2px black, 2px 2px 8px #994300;"*@ id="newTab" onclick="newTab('http://consumercal.org/california-online-privacy-protection-act-caloppa/#sthash.0FdRbT51.dpuf')">Click Here for More Info.</button>
+            it is being shared, and to comply with this policy. -  <button id="newTab" onclick="newTab('http://consumercal.org/california-online-privacy-protection-act-caloppa/#sthash.0FdRbT51.dpuf')">Click Here for More Info.</button>
         </div>
         <div class="p_div">According to CalOPPA we agree to the following:</div>
         <div class="p_div">Users can visit our site anonymously</div>

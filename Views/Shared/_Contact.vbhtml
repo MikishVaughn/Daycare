@@ -4,8 +4,8 @@
     Dim siteFacebookPageURL As String = SiteHelpers.GetSiteInfo("SiteFacebookPageURL")
     Dim siteEmail_Support As String = SiteHelpers.GetSiteInfo("SiteEmail_Support")
 
-    Dim fb_Logo As String = "../Content/Images/Site/Logos/FB_Logo/32x32_FB_Logo.png"
-    Dim google_Logo As String = "../Content/Images/Site/Logos/Google_Logo/32x32_Goggle_Logo.png"
+    'Dim fb_Logo As String = "../Content/Images/Site/Logos/FB_Logo/32x32_FB_Logo.png"
+    'Dim google_Logo As String = "../Content/Images/Site/Logos/Google_Logo/32x32_Goggle_Logo.png"
 
 End Code
 
@@ -28,7 +28,7 @@ End Code
         <!-- Facebook Page Button -->
         <div>
             <button style="width: 200px; border-radius:8px; padding-left: 20px;text-align: left;" onclick="newTab('@siteFacebookPageURL')">
-                <img style="height:32px; width:32px;" src="~/Content/XML/Svg/Site/FB_Square.SVG" /> <b>Facebook Page</b>
+                <img style="height:32px; width:32px;" src="~/Content/Images/Site/Svg/FB-Square.Svg" /> <b>Facebook Page</b>
             </button>
         </div>
         <br />
@@ -36,7 +36,7 @@ End Code
         <!-- Google Page Button -->
         <div>
             <button style="width: 200px; border-radius:8px; padding-left: 20px;text-align: left;" onclick="newTab('@siteGoogleMapURL')">
-                <img style="height:32px; width:32px;" src="~/Content/XML/Svg/Site/Google_Square.svg" /> &nbsp;&nbsp;&nbsp;&nbsp;<b>Google</b>
+                <img style="height:32px; width:32px;" src="~/Content/Images/Site/Svg/Google-Square.svg" /> &nbsp;&nbsp;&nbsp;&nbsp;<b>Google</b>
             </button>
         </div>
 
