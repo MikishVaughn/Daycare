@@ -1,6 +1,15 @@
 ﻿@Code
-    ViewData("Title") = "About"
+
+    ' Get Title and Site Name 
+    ViewData("Title") = ViewData("Message")
+
+    ' Get Site Info
     Dim siteName As String = SiteHelpers.GetSiteInfo("SiteName")
+    Dim siteDescription As String = SiteHelpers.GetSiteInfo("SiteDescription")
+
+    ' Page Image(s)
+    Dim pageImage_About As String = SiteHelpers.GetSiteInfo("PageImage_About")
+
 End Code
 
 
@@ -8,20 +17,21 @@ End Code
 
     <!-- Heading Row-->
     <div class="row gx-4 gx-lg-5 align-items-center my-5">
+
+        <!-- Page Image -->
         <div class="col-lg-7">
-            <img class="img-fluid rounded mb-4 mb-lg-0" src="~/Content/Images/Site/Misc/900x600-image-01.jpg" alt="Page Image" />
+            <img class="img-fluid rounded mb-4 mb-lg-0" src=@pageImage_About alt="Page Image" id="page-image" />
         </div>
-        <div class="col-lg-5">
-            <img style="height:  160px; width: 360px;" src="~/Content/Images/Site/Svg/BD-Body-01.svg" class="img-fluid" alt="Responsive Brand image" id="big-logo" />
-            <h1 class="font-weight-light">Waterloo Bulldog Wrestling Club</h1>
-            <p>This site is for all of our Support activities.</p>
-            <a class="btn btn-primary" href="#!">Call to Action!</a>
-        </div>
+
+        <!-- Brand Card -->
+        @Html.Partial("Cards/_Brand")        
+
     </div>
-    <!-- Call to Action-->
-    <div class="card text-white bg-secondary my-5 py-4 text-center">
-        <div class="card-body"><p class="text-white m-0">We are always looking for help and donations, Check out our schedule!</p></div>
-    </div>
+
+    <!-- Call to Action Card -->
+    @Html.Partial("Cards/_CallToAction")
+    
+
     <!-- Content Row-->
     <div class="row gx-4 gx-lg-5">
 

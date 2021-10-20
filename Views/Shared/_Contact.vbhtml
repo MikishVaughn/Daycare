@@ -2,10 +2,7 @@
     Dim siteName As String = SiteHelpers.GetSiteInfo("SiteName")
     Dim siteGoogleMapURL As String = SiteHelpers.GetSiteInfo("SiteGoogleMapURL")
     Dim siteFacebookPageURL As String = SiteHelpers.GetSiteInfo("SiteFacebookPageURL")
-    Dim siteEmail_Support As String = SiteHelpers.GetSiteInfo("SiteEmail_Support")
-
-    'Dim fb_Logo As String = "../Content/Images/Site/Logos/FB_Logo/32x32_FB_Logo.png"
-    'Dim google_Logo As String = "../Content/Images/Site/Logos/Google_Logo/32x32_Goggle_Logo.png"
+    Dim siteEmailSupport As String = SiteHelpers.GetSiteInfo("SiteEmailSupport")
 
 End Code
 
@@ -28,7 +25,7 @@ End Code
         <!-- Facebook Page Button -->
         <div>
             <button style="width: 200px; border-radius:8px; padding-left: 20px;text-align: left;" onclick="newTab('@siteFacebookPageURL')">
-                <img style="height:32px; width:32px;" src="~/Content/Images/Site/Svg/FB-Square.Svg" /> <b>Facebook Page</b>
+                <img style="height:32px; width:32px;" src="~/Content/Images/Site/Catagories/Svg/FB-Square.Svg" /> <b>Facebook Page</b>
             </button>
         </div>
         <br />
@@ -36,7 +33,7 @@ End Code
         <!-- Google Page Button -->
         <div>
             <button style="width: 200px; border-radius:8px; padding-left: 20px;text-align: left;" onclick="newTab('@siteGoogleMapURL')">
-                <img style="height:32px; width:32px;" src="~/Content/Images/Site/Svg/Google-Square.svg" /> &nbsp;&nbsp;&nbsp;&nbsp;<b>Google</b>
+                <img style="height:32px; width:32px;" src="~/Content/Images/Site/Catagories/Svg/Google-Square.svg" /> &nbsp;&nbsp;&nbsp;&nbsp;<b>Google</b>
             </button>
         </div>
 
@@ -54,7 +51,7 @@ End Code
                                 /*font-weight: bold;*/
                                 padding-top: 20px;">Website help:</div>
                 <br />
-                <a style="color: Burlywood; word-wrap: break-word;" href="mailto: @siteEmail_Support">@siteEmail_Support</a>
+                <a style="color: Burlywood; word-wrap: break-word;" href="mailto: @siteEmail_Support">@siteEmailSupport</a>
             </div>
         </div>
     </div>

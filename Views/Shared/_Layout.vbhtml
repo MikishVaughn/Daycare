@@ -1,6 +1,6 @@
 ﻿@code
     ' Page background
-    Dim backgroundColor As String = "#FFFFFF"
+    Dim backgroundColor As String = "#000"
     Dim backgroundImage As String = SiteHelpers.GetImageLocation() + "Categories/Backgrounds/main-bg.jpg"
 
     ' Get Site Info From SiteHelers class where it is stored.
@@ -59,7 +59,6 @@ End Code
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="manifest" href="/site.webmanifest">
 
     <!-- Link Share Setup -->
     <link rel="canonical" href="@canonical" />
@@ -88,10 +87,10 @@ End Code
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
-    <!-- Site Local css -->
-    <link href="~/Content/css/styles.css" rel="stylesheet" />
-    <link href="~/Content/css/custom.css" rel="stylesheet" />
-    <link href="~/Content/css/sitestyles.css" rel="stylesheet" />
+    <!-- Site Local Css and Scss -->
+    <link href="~/Css/styles.css" rel="stylesheet" />
+    <link href="~/Css/Custom.css" rel="stylesheet" />    
+    <link href="~/Css/sitestyles.css" rel="stylesheet" />
 
     <!-- Site Local Scripts -->
     <script src="~/Scripts/sitescripts.js"></script>

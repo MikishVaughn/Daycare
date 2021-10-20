@@ -27,81 +27,168 @@
 
         Dim siteURL As String = RootUrl()
 
-        If HttpContext.Current.Request.IsLocal Then
-            If AttributeName = "SiteName" Or AttributeName = "SiteDesigner" Then
-                Return "Waterloo Bulldog Wrestling Club"
-            End If
-            If AttributeName = "SiteURL" Or AttributeName = "SiteDesignerURL" Then
-                Return "https://mikish.com"
-            End If
-            If AttributeName = "SiteEmail_Sales" Then
-                Return "MikishVaughn@Gmail.com"
-            End If
-            If AttributeName = "SiteEmail_Support" Then
-                Return "MikishVaughn@Gmail.com"
-            End If
-            If AttributeName = "SiteFacebookPageURL" Then
-                Return "https://www.facebook.com/groups/2282063028779306"
-            End If
-            If AttributeName = "SiteGoogleMapURL" Then
-                Return "https://www.google.com/maps/place/Waterloo+High+School/@38.319154,-90.1398618,15z/data=!4m5!3m4!1s0x0:0x72f2d8598a2c843a!8m2!3d38.319154!4d-90.1398618"
-            End If
-            If AttributeName = "LinkShare" Then
-                Return "~/Content/Images/Site/LinkShares/linkshare-01"
-            End If
-            If AttributeName = "SiteDescription" Then
-                Return "This web site is dedicated to the Bulldog Wrestlers!"
-            End If
-        End If
-        If siteURL.Contains("Bulldog") Or siteURL.Contains("bulldog.") Then
-            If AttributeName = "SiteName" Or AttributeName = "SiteDesigner" Then
-                Return "Waterloo Bulldog Wrestling Club"
-            End If
-            If AttributeName = "SiteURL" Or AttributeName = "SiteDesignerURL" Then
-                Return "https://mikish.com"
-            End If
-            If AttributeName = "SiteEmail_Sales" Then
-                Return "Mikish.Vaughn@Gmail.com"
-            End If
-            If AttributeName = "SiteEmail_Support" Then
-                Return "Mikish.Vaughn@Gmail.com"
-            End If
-            If AttributeName = "SiteFacebookPageURL" Then
-                Return "https://www.facebook.com/groups/2282063028779306"
-            End If
-            If AttributeName = "SiteGoogleMapURL" Then
-                Return "https://www.google.com/maps/place/Waterloo+High+School/@38.319154,-90.1398618,15z/data=!4m5!3m4!1s0x0:0x72f2d8598a2c843a!8m2!3d38.319154!4d-90.1398618"
-            End If
-            If AttributeName = "LinkShare" Then
-                Return "~/Content/Images/Site/LinkShares/linkshare-01.png"
-            End If
-            If AttributeName = "SiteDescription" Then
-                Return "This web site is dedicated to the Bulldog Wrestlers!"
-            End If
-        End If
-        If AttributeName = "SiteName" Or AttributeName = "SiteDesigner" Then
+        ' Site Designer
+        If AttributeName = "SiteDesigner" Then
             Return "The Mikish Group"
         End If
-        If AttributeName = "SiteURL" Or AttributeName = "SiteDesignerURL" Then
+        If AttributeName = "SiteDesignerURL" Then
             Return "https://mikish.com"
         End If
-        If AttributeName = "SiteEmail_Sales" Then
+
+        ' Site Specific Info:
+
+        '' Running Local
+        '' (Show Bulldog) 
+        If HttpContext.Current.Request.IsLocal Then
+
+            ' Site Name
+            If AttributeName = "SiteName" Then
+                Return "Waterloo Bulldog Wrestling Club"
+            End If
+
+            ' Site Description
+            If AttributeName = "SiteDescription" Then
+                Return "This web site is dedicated to the Bulldog Wrestlers!"
+            End If
+
+            ' Site URL
+            If AttributeName = "SiteURL" Then
+                Return "http://mikish-001-site2.gtempurl.com/"
+            End If
+
+            ' Site Email
+            If AttributeName = "SiteEmailSales" Then
+                Return "MikishVaughn@Gmail.com"
+            End If
+            If AttributeName = "SiteEmailSupport" Then
+                Return "MikishVaughn@Gmail.com"
+            End If
+
+            ' Facebook Page
+            If AttributeName = "SiteFacebookPageURL" Then
+                Return "https://www.facebook.com/groups/2282063028779306"
+            End If
+
+            ' Google Maps Location
+            If AttributeName = "SiteGoogleMapURL" Then
+                Return "https://www.google.com/maps/@38.3357011,-90.1490775,4135m/data=!3m1!1e3"
+            End If
+
+            ' Site Images
+            If AttributeName = "BigLogo" Then
+                Return "/Content/Images/Site/Catagories/Svg/BD-Body-01.svg"
+            End If
+            If AttributeName = "SmallLogo" Then
+                Return "/Content/Images/Site/Catagories/Svg/BD-Head-Right-03.svg"
+            End If
+            If AttributeName = "PageImage_About" Then
+                Return "/Content/Images/Site/Catagories/PageImages/900x800-image-01.jpg"
+            End If
+            If AttributeName = "LinkShare" Then
+                Return "/Content/Images/Site/Catagories/LinkShares/1200x630-linkshare-01"
+            End If
+
+        End If
+
+        '' URL contains "Bulldog"
+        If siteURL.Contains("Bulldog") Or siteURL.Contains("bulldog") Then
+
+            ' Site Name
+            If AttributeName = "SiteName" Then
+                Return "Waterloo Bulldog Wrestling Club"
+            End If
+
+            ' Site Description
+            If AttributeName = "SiteDescription" Then
+                Return "This web site is dedicated to the Bulldog Wrestlers!"
+            End If
+
+            ' Site URL
+            If AttributeName = "SiteURL" Then
+                Return "http://mikish-001-site2.gtempurl.com/"
+            End If
+
+            ' Site Email
+            If AttributeName = "SiteEmailSales" Then
+                Return "MikishVaughn@Gmail.com"
+            End If
+            If AttributeName = "SiteEmailSupport" Then
+                Return "MikishVaughn@Gmail.com"
+            End If
+
+            ' Facebook Page
+            If AttributeName = "SiteFacebookPageURL" Then
+                Return "https://www.facebook.com/groups/2282063028779306"
+            End If
+
+            ' Google Maps Location
+            If AttributeName = "SiteGoogleMapURL" Then
+                Return "https://www.google.com/maps/@38.3357011,-90.1490775,4135m/data=!3m1!1e3"
+            End If
+
+            ' Site Images
+            If AttributeName = "BigLogo" Then
+                Return "/Content/Images/Site/Catagories/Svg/BD-Body-01.svg"
+            End If
+            If AttributeName = "SmallLogo" Then
+                Return "/Content/Images/Site/Catagories/Svg/BD-Head-Right-03.svg"
+            End If
+            If AttributeName = "PageImage_About" Then
+                Return "/Content/Images/Site/Catagories/PageImages/900x800-image-01.jpg"
+            End If
+            If AttributeName = "LinkShare" Then
+                Return "/Content/Images/Site/Catagories/LinkShares/1200-630-linkshare-01"
+            End If
+        End If
+
+        ' Site URL not Local and name not caught for specific settings
+        ' so use the default site info below:
+
+        ' Site Name
+        If AttributeName = "SiteName" Then
+            Return "The Mikish Group"
+        End If
+
+        ' Site Description
+        If AttributeName = "SiteDescription" Then
+            Return "This web site is dedicated to the The Mikish Group!"
+        End If
+
+        ' Site URL
+        If AttributeName = "SiteURL" Then
+            Return "http://mikish-001-site1.gtempurl.com/"
+        End If
+
+        ' Site Email
+        If AttributeName = "SiteEmailSales" Then
             Return "MikishVaughn@Gmail.com"
         End If
-        If AttributeName = "SiteEmail_Support" Then
+        If AttributeName = "SiteEmailSupport" Then
             Return "MikishVaughn@Gmail.com"
         End If
+
+        ' Facebook Page
         If AttributeName = "SiteFacebookPageURL" Then
             Return "https://Facebook.com/MikishGroup"
         End If
+
+        ' Google Maps Location
         If AttributeName = "SiteGoogleMapURL" Then
-            Return "https://www.google.com/maps/dir//39.1879094,-89.9457662/@39.1860534,-89.9462016,1009m/data=!3m1!1e3"
+            Return "https://www.google.com/maps/@38.992257,-89.1196202,286m/data=!3m1!1e3"
+        End If
+
+        ' Site Images
+        If AttributeName = "BigLogo" Then
+            Return "/Content/Images/Catagories/Site/Svg/BlueSun.svg"
+        End If
+        If AttributeName = "SmallLogo" Then
+            Return "/Content/Images/Site/Catagories/Svg/BlueSun.svg"
+        End If
+        If AttributeName = "PageImage_About" Then
+            Return "/Content/Images/Site/Catagories/PageImages/900x800-image-02.jpg"
         End If
         If AttributeName = "LinkShare" Then
-            Return "~/Content/Images/Site/LinkShares/TheMikishGroup_Welcome_1200x630.jpg"
-        End If
-        If AttributeName = "SiteDescription" Then
-            Return "This web site is dedicated to The Mikish Group!"
+            Return "/Content/Images/Site/Catagories/LinkShares/1200x630-linkshare-02"
         End If
 
         'If we make it here then there was a coding failure!
@@ -125,22 +212,20 @@
     <AllowAnonymous>
     Public Shared Function MaxImages(Msg As String) As Integer
 
-        If Msg = "EventsMenu" Then
-            Msg = "Countdowns"
-        End If
-
         Dim imageCount As Integer = 1
         Try
             If HttpContext.Current.Request.IsLocal Then
-                imageCount = IO.Directory.GetFiles("D:\Projects\Repos\MyWebsite\Content\Images\Categories\" + Msg, "*.jpg").Length()
+                imageCount = IO.Directory.GetFiles("D:\Projects\Repos\Bulldog\Content\Images\Categories\" + Msg, "*.jpg").Length()
             Else
-                imageCount = IO.Directory.GetFiles("h:\root\home\mikish-001\www\site1\Content\Images\Categories\" + Msg, "*.jpg").Length()
+                imageCount = IO.Directory.GetFiles("h:\root\home\mikish-001\www\site2\Content\Images\Categories\" + Msg, "*.jpg").Length()
                 Try
                     imageCount = IO.Directory.GetFiles("h:\root\home\mikish-001\www\site1\Content\Images\Categories\" + Msg, "*.jpg").Length()
                 Catch ex As Exception
                     imageCount = IO.Directory.GetFiles("G:\PleskVhosts\mikish.com\httpdocs\Content\Images\Categories\" + Msg, "*.jpg").Length()
                 End Try
 
+                '' For Info Purposes:
+                ''
                 '' GoDaddy.com
                 '' imageCount = IO.Directory.GetFiles("G:\PleskVhosts\mikish.com\httpdocs\Content\Images\Categories\" + Msg, "*.jpg").Length()
 

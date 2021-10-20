@@ -1,4 +1,4 @@
-//***********************************************//
+﻿//***********************************************//
 //  Functions used to calculate countdown        //
 //  currently Seasons Only                       //
 //***********************************************//
@@ -33,59 +33,47 @@ function updateCountdownDisplay(eventDate, eventType) {
     if (eventDate.getMonth() === new Date().getMonth() && eventDate.getDate() === new Date().getDate()) {
         // *** Today is the Event Day! ***//
 
-        try {
-            // Update eventDate Display
-            document.getElementById("eventdate").
-            document.getElementById("eventdate").innerHTML = new Date().toString().substring(0, 16);
+        // Update eventDate Display
+        document.getElementById("eventdate").innerHTML = new Date().toString().substring(0, 16);
 
-            // Update Countdown Display
-            document.getElementById("days").innerHTML = "<br />";
-            document.getElementById("lbldays").innerHTML = "Today!";
-            document.getElementById("hours").innerHTML = "<br />";
-            document.getElementById("lblhours").innerHTML = "<br />";
-            document.getElementById("minutes").innerHTML = "";
-            document.getElementById("lblminutes").innerHTML = "";
-            document.getElementById("seconds").innerHTML = "";
-            document.getElementById("lblseconds").innerHTML = "";
-            
-        } catch (e) {
-            // Do nothing.
-        }
+        // Update Countdown Display
+        document.getElementById("days").innerHTML = "<br />";
+        document.getElementById("lbldays").innerHTML = "Today!";
+        document.getElementById("hours").innerHTML = "<br />";
+        document.getElementById("lblhours").innerHTML = "<br />";
+        document.getElementById("minutes").innerHTML = "";
+        document.getElementById("lblminutes").innerHTML = "";
+        document.getElementById("seconds").innerHTML = "";
+        document.getElementById("lblseconds").innerHTML = "";
 
     } else {
 
-        try {
+         // Update eventDate and timezone display. Seasons needs date and time formatting (eventType === 0).
+        var timezonestring = Intl.DateTimeFormat().resolvedOptions().timeZone + " " + new Date().toTimeString().slice(9);
+        document.getElementById("timezone").innerHTML = timezonestring;
+        document.getElementById("eventdate").innerHTML = eventType === 0 ? eventDate.toString().substring(0, 16) : eventDate.toLocaleString();        
+        
+        const second = 1000,
+            minute = second * 60,
+            hour = minute * 60,
+            day = hour * 24;
 
-             // Update eventDate and timezone display. Seasons needs date and time formatting (eventType === 0).        
-            var timezonestring = Intl.DateTimeFormat().resolvedOptions().timeZone + " " + new Date().toTimeString().slice(9);
-            document.getElementById("timezone").innerHTML = timezonestring;
-            document.getElementById("eventdate").innerHTML = eventType === 0 ? eventDate.toString().substring(0, 16) : eventDate.toLocaleString();        
-            
-            const second = 1000,
-                minute = second * 60,
-                hour = minute * 60,
-                day = hour * 24;
+        let datediff = eventDate - new Date().getTime();
 
-            let datediff = eventDate - new Date().getTime();
+        var s, m, h, d;
+        s = Math.floor((datediff % (minute)) / second);
+        m = Math.floor((datediff % (hour)) / (minute));
+        h = Math.floor((datediff % (day)) / (hour));
+        d = Math.floor(datediff / (day));
 
-            var s, m, h, d;
-            s = Math.floor((datediff % (minute)) / second);
-            m = Math.floor((datediff % (hour)) / (minute));
-            h = Math.floor((datediff % (day)) / (hour));
-            d = Math.floor(datediff / (day));
-
-            document.getElementById("days").innerHTML = d > 1 ? d : d > 0 ? d : "<br />";
-            document.getElementById("lbldays").innerHTML = d > 1 ? "Days" : d > 0 ? "Day" : "in";
-            document.getElementById("hours").innerHTML = h > 1 ? h : h > 0 ? h : "";
-            document.getElementById("lblhours").innerHTML = h > 1 ? "hours," : h > 0 ? "hour," : "";
-            document.getElementById("minutes").innerHTML = m > 1 ? m : m > 0 ? m : "";
-            document.getElementById("lblminutes").innerHTML = m > 1 ? "minutes, and" : m > 0 ? "minute, and" : "";
-            document.getElementById("seconds").innerHTML = s > 1 ? s : s > 0 ? s : "0";
-            document.getElementById("lblseconds").innerHTML = s > 1 ? "seconds" : s > 0 ? "second" : "seconds";
-
-        } catch (e) {
-            // Do nothing. One off the id's probably does not exist.
-        }
+        document.getElementById("days").innerHTML = d > 1 ? d : d > 0 ? d : "<br />";
+        document.getElementById("lbldays").innerHTML = d > 1 ? "Days" : d > 0 ? "Day" : "in";
+        document.getElementById("hours").innerHTML = h > 1 ? h : h > 0 ? h : "";
+        document.getElementById("lblhours").innerHTML = h > 1 ? "hours," : h > 0 ? "hour," : "";
+        document.getElementById("minutes").innerHTML = m > 1 ? m : m > 0 ? m : "";
+        document.getElementById("lblminutes").innerHTML = m > 1 ? "minutes, and" : m > 0 ? "minute, and" : "";
+        document.getElementById("seconds").innerHTML = s > 1 ? s : s > 0 ? s : "0";
+        document.getElementById("lblseconds").innerHTML = s > 1 ? "seconds" : s > 0 ? "second" : "seconds";
     };
 }
 function calcStartDate(eventYear, eventName) {
@@ -183,3 +171,35 @@ function getoffsetDST() {
     return offsetDST;
 }
 
+//***********************************************//
+//  Function used to open Web Page in new Tab    //
+//***********************************************//
+function newTab(tabURL) {
+    var newWindowTab = window.open(tabURL);
+}
+
+//***********************************************//
+//  Create Image List of Carousel Items          //
+//***********************************************//
+function createImageList(imageLocation, altText, imageCount) {
+    altText = "";
+    var i = imageCount;
+    var text = "<div class='carousel-item active'><img src='" + imageLocation.concat("000000".concat(i).slice(-6)) + ".jpg' alt='" + altText.concat("000000".concat(imageCount).slice(-6)) + "' /></img></div>";
+    i--;
+    while (i > 0) {
+        text += "<div class='carousel-item'><img src='" + imageLocation.concat("000000".concat(i).slice(-6)) + ".jpg' alt='" + altText.concat("000000".concat(i).slice(-6)) + "' /></img></div>";
+        i--;
+    }
+    document.getElementById("CarouselItems").innerHTML = text;
+}
+
+//***********************************************//
+//  Change background                            //
+//***********************************************//
+function changeBackground(newBackground) {
+    $('body').css('background-image', newBackground);
+}
+
+//***********************************************//
+//  Function used by Floaters                    //
+//***********************************************//

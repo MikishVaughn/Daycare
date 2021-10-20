@@ -1,4 +1,6 @@
 ﻿@code
+
+    ' Keep Current Menu Selection Active (Highlighted)
     Dim choice01 As String = ""
     Dim choice02 As String = ""
     Dim choice03 As String = ""
@@ -16,22 +18,31 @@
     If ViewData("message") = "Merchandise" Then
         choice04 = "active"
     End If
+
+    Dim siteName As String = SiteHelpers.GetSiteInfo("SiteName")
+    ' Page Images
+    Dim smallLogo = SiteHelpers.GetSiteInfo("SmallLogo")
+
 End Code
 
 <!-- NavBar -->
 <div>
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark border-bottom box-shadow mb-3 navbar navbar-light">
+
+
         <div class="d-flex flex-grow-1">
+
+            <!-- Hidden Space -->
             <span class="w-100 d-lg-none d-block">
                 <!-- hidden spacer to center brand on mobile -->
             </span>
 
             <!-- Title set to show on lg -->
-            <a class="navbar-brand d-none d-lg-inline-block" href="~/Info/About"><img src="~/Content/Images/Site/Svg/BD-Head-Right-02.svg" alt="brand logo" id="brand-logo">Waterloo Bulldog Wrestling Club</a>
+            <a class="navbar-brand d-none d-lg-inline-block" href="~/Info/About"><img src=@smallLogo alt="brand logo" id="brandlogo">@siteName</a>
 
             <!-- Logo Image not shown on lg -->
             <a class="navbar-brand-two mx-auto d-lg-none d-inline-block" href="~/Info/About">
-                <img src="~/Content/Images/Site/Svg/BD-Head-Right-02.svg" alt="brand logo" id="brand-logo">
+                <img src=@smallLogo alt="brand logo" id="brandlogo">
             </a>
 
             <!-- Toggle Button -->
@@ -42,6 +53,8 @@ End Code
             </div>
 
         </div>
+
+        <!-- Selection Choices -->
         <div class="collapse navbar-collapse flex-grow-1 text-right" id="navbarToggler">
             <ul class="navbar-nav ms-auto flex-nowrap">
                 <li class="nav-item text-light">

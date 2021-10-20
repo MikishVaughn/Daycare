@@ -182,44 +182,88 @@
     <Content Include="android-chrome-192x192.png" />
     <Content Include="android-chrome-512x512.png" />
     <Content Include="apple-touch-icon.png" />
-    <Content Include="Content\Images\Site\Svg\BD-Body-01.png" />
-    <Content Include="Content\Images\Site\Svg\BD-Body-01.svg" />
-    <Content Include="Content\Images\Site\Svg\BD-Head-02.png" />
-    <Content Include="Content\Images\Site\Svg\BD-Head-02.svg" />
-    <Content Include="Content\Images\Site\Svg\BD-Head-Right-01.svg" />
-    <Content Include="Content\Images\Site\Svg\BD-Head-Right-02.png" />
-    <Content Include="Content\Images\Site\Svg\BD-Head-Right-02.svg" />
-    <Content Include="Content\Images\Site\Svg\BD-Head-Right-04.svg" />
-    <Content Include="Content\Images\Site\Svg\BD-Head-Right-04a.svg" />
-    <Content Include="Content\Images\Site\Svg\Bulldog-body.ai" />
-    <Content Include="Content\Images\Site\Svg\BD-Head-02.ai" />
-    <Content Include="Content\Images\Site\Svg\BD-Head-Right-01.ai" />
-    <Content Include="Content\Images\Site\Svg\BD-Head-Right-02.ai" />
-    <Content Include="Content\Images\Site\Svg\BD-Head-Right-04.ai" />
-    <Content Include="Content\Images\Site\Svg\BD-Body-01.ai" />
+    <Content Include="Content\Images\Site\Carousel\About\000001.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Images\Site\Catagories\Icons\android-chrome-192x192.png" />
+    <Content Include="Content\Images\Site\Catagories\Icons\android-chrome-512x512.png" />
+    <Content Include="Content\Images\Site\Catagories\Icons\apple-touch-icon.png" />
+    <Content Include="Content\Images\Site\Catagories\Icons\Bulldog\android-chrome-192x192.png" />
+    <Content Include="Content\Images\Site\Catagories\Icons\Bulldog\android-chrome-512x512.png" />
+    <Content Include="Content\Images\Site\Catagories\Icons\Bulldog\apple-touch-icon.png" />
+    <Content Include="Content\Images\Site\Catagories\Icons\Bulldog\favicon-16x16.png" />
+    <Content Include="Content\Images\Site\Catagories\Icons\Bulldog\favicon-32x32.png" />
+    <Content Include="Content\Images\Site\Catagories\Icons\Bulldog\favicon.ico" />
+    <Content Include="Content\Images\Site\Catagories\Icons\favicon-16x16.png" />
+    <Content Include="Content\Images\Site\Catagories\Icons\favicon-32x32.png" />
+    <Content Include="Content\Images\Site\Catagories\Icons\favicon.ico" />
+    <Content Include="Content\Images\Site\Catagories\LinkShares\1200x630-linkshare-01.png" />
+    <Content Include="Content\Images\Site\Catagories\LinkShares\1200x630-Linkshare-02.jpg" />
+    <Content Include="Content\Images\Site\Catagories\PageImages\900x600-image-01.jpg" />
+    <Content Include="Content\Images\Site\Catagories\PageImages\900x600-image-02.jpg" />
+    <Content Include="Content\Images\Site\Catagories\PageImages\900x800-image-01.jpg" />
+    <Content Include="Content\Images\Site\Catagories\PageImages\900x800-image-02.jpg" />
+    <Content Include="Content\Images\Site\Catagories\Svg\BD-Body-01.png" />
+    <Content Include="Content\Images\Site\Catagories\Svg\BD-Body-01.svg" />
+    <Content Include="Content\Images\Site\Catagories\Svg\BD-Body.png" />
+    <Content Include="Content\Images\Site\Catagories\Svg\BD-Body.svg" />
+    <Content Include="Content\Images\Site\Catagories\Svg\BD-Head-02.png" />
+    <Content Include="Content\Images\Site\Catagories\Svg\BD-Head-02.svg" />
+    <Content Include="Content\Images\Site\Catagories\Svg\BD-Head-03.png" />
+    <Content Include="Content\Images\Site\Catagories\Svg\BD-Head-03.svg" />
+    <Content Include="Content\Images\Site\Catagories\Svg\BD-Head-Right-01.png" />
+    <Content Include="Content\Images\Site\Catagories\Svg\BD-Head-Right-01.svg" />
+    <Content Include="Content\Images\Site\Catagories\Svg\BD-Head-Right-02.png" />
+    <Content Include="Content\Images\Site\Catagories\Svg\BD-Head-Right-02.svg" />
+    <Content Include="Content\Images\Site\Catagories\Svg\BD-Head-Right-03.png" />
+    <Content Include="Content\Images\Site\Catagories\Svg\BD-Head-Right-03.svg" />
+    <Content Include="Content\Images\Site\Catagories\Svg\BD-Head-Right-04.png" />
+    <Content Include="Content\Images\Site\Catagories\Svg\BD-Head-Right-04.svg" />
+    <Content Include="Content\Images\Site\Catagories\Svg\BD-Head-Right-04a.png" />
+    <Content Include="Content\Images\Site\Catagories\Svg\BD-Head-Right-04a.svg" />
+    <Content Include="Content\Images\Site\Catagories\Svg\BlueSun.png" />
+    <Content Include="Content\Images\Site\Catagories\Svg\BlueSun.svg" />
+    <Content Include="Content\Images\Site\Catagories\Svg\FB-Home.png" />
+    <Content Include="Content\Images\Site\Catagories\Svg\FB-Home.svg" />
+    <Content Include="Content\Images\Site\Catagories\Svg\FB-Square.png" />
+    <Content Include="Content\Images\Site\Catagories\Svg\FB-Square.svg" />
+    <Content Include="Content\Images\Site\Catagories\Svg\Google-Square.png" />
+    <Content Include="Content\Images\Site\Catagories\Svg\Google-Square.svg" />
+    <Content Include="Content\Images\Site\Icons\android-chrome-512x512.png" />
+    <Content Include="Content\Images\Site\Catagories\Svg\BD-Body-01.ai" />
+    <Content Include="Content\Images\Site\Catagories\Svg\BD-Body.ai" />
+    <Content Include="Content\Images\Site\Catagories\Svg\BD-Head-02.ai" />
+    <Content Include="Content\Images\Site\Catagories\Svg\BD-Head-Right-01.ai" />
+    <Content Include="Content\Images\Site\Catagories\Svg\BD-Head-Right-02.ai" />
+    <Content Include="Content\Images\Site\Catagories\Svg\BD-Head-Right-04.ai" />
+    <Content Include="Content\Images\Site\Catagories\Svg\BD-Head-Right-04a.ai" />
+    <Content Include="Content\Images\Site\Catagories\Svg\BlueSun.ai" />
+    <Content Include="Content\Images\Site\Catagories\Svg\FB-Home.ai" />
+    <Content Include="Content\Images\Site\Catagories\Svg\FB-Square.ai" />
+    <Content Include="Content\Images\Site\Catagories\Svg\Google-Square.ai" />
+    <Content Include="Scss\custom.scss" />
+    <Content Include="Content\Images\Site\Catagories\Svg\BD-Head-03.ai" />
+    <Content Include="Content\Images\Site\Catagories\Svg\BD-Head-Right-03.ai" />
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>
     </None>
+    <None Include="My Project\PublishProfiles\IISProfile.pubxml" />
+    <None Include="My Project\PublishProfiles\Site 2 - Web Deploy.pubxml" />
     <None Include="My Project\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <CustomToolNamespace>My</CustomToolNamespace>
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
     <None Include="packages.config" />
-    <Content Include="Content\css\custom.css" />
-    <Content Include="Content\css\styles.css" />
-    <Content Include="Content\Images\Site\Backgrounds\900x600-image-01.jpg" />
+    <Content Include="Css\custom.css" />
+    <Content Include="Css\styles.css" />
     <Content Include="Content\Images\Site\Icons\android-chrome-192x192.png" />
     <Content Include="Content\Images\Site\Icons\apple-touch-icon.png" />
     <Content Include="Content\Images\Site\LinkShares\linkshare-01.png" />
     <Content Include="Content\Images\Site\Icons\favicon-16x16.png" />
     <Content Include="Content\Images\Site\Icons\favicon-32x32.png" />
     <Content Include="Content\Images\Site\Icons\favicon.ico" />
-    <Content Include="Content\Images\Site\Svg\Bulldog-body.svg" />
-    <Content Include="Content\Images\Site\Svg\FB-Home.svg" />
-    <Content Include="Content\Images\Site\Svg\FB-Square.svg" />
-    <Content Include="Content\Images\Site\Svg\Google-Square.svg" />
     <Content Include="favicon-16x16.png" />
     <Content Include="favicon-32x32.png" />
     <Content Include="Scripts\sitescripts.js" />
@@ -236,6 +280,10 @@
     <Content Include="Views\Shared\Cards\_Other.vbhtml" />
     <Content Include="Views\Shared\Cards\_Merchandise.vbhtml" />
     <Content Include="Views\Shared\Cards\_Schedule.vbhtml" />
+    <Content Include="Views\Shared\Cards\_Brand.vbhtml" />
+    <Content Include="Views\Shared\Cards\_CallToAction.vbhtml" />
+    <Content Include="Views\Shared\_Carousel.vbhtml" />
+    <Content Include="Views\Info\Fundraising.vbhtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="favicon.ico" />
@@ -248,7 +296,7 @@
     <Content Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
-    <Content Include="Content\css\sitestyles.css" />
+    <Content Include="Css\sitestyles.css" />
     <Content Include="Views\_ViewStart.vbhtml" />
     <Content Include="Views\Shared\Error.vbhtml" />
     <Content Include="Views\Shared\_Layout.vbhtml" />
@@ -256,6 +304,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Content\Images\Site\PageImages\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <PropertyGroup>
