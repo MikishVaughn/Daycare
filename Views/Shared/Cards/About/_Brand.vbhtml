@@ -4,14 +4,15 @@
     Dim BigLogo As String = SiteHelpers.GetSiteInfo("BigLogo")
 
     ' Get Site Info
-    Dim siteName As String = SiteHelpers.GetSiteInfo("SiteName")
+    Dim siteName1 As String = "Waterloo Bulldog"
+    Dim siteName2 As String = "Wrestling Club"
     Dim siteDescription As String = SiteHelpers.GetSiteInfo("SiteDescription")
 
 End Code
 
 <div class="col-lg-5">
-    <div class="card h-100 noborder">
-        <div class="card-body">
+    <div class="card h-100 bg-info noborder">
+        <div class="card-body text-center">
 
             <!-- No Title -->
             <h2 class="card-title"></h2>
@@ -20,7 +21,8 @@ End Code
             <img style="height:  160px; width: 360px;" src=@BigLogo class="img-fluid" alt="Responsive Big Logo" id="big-logo" />
 
             <!-- Site Name -->
-            <h1 class="font-weight-light">@siteName</h1>
+            <h2 class="font-weight-light">@siteName1</h2>
+            <h2 class="font-weight-light">@siteName2</h2>
 
             <!-- Site Discription -->
             <p class="card-text">@siteDescription</p>
@@ -30,4 +32,8 @@ End Code
 
         </div>
     </div>
+
+    <!-- Call to Action Card -->
+    @Html.Partial("Cards/About/_CallToAction")
+
 </div>

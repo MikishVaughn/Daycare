@@ -193,4 +193,4 @@ End Code
 </div>
 
 <!-- Contact Info -->
-@Html.Partial("_Contact")
+@Html.Partial("cards/_Contact")

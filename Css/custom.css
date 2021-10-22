@@ -1,5 +1,13 @@
 /* Bootstrap overrides */
 
+/* body - Necessary entries for Bootstrap NavBarv */
+body {
+    overflow-y: scroll;
+    line-height: 1;
+    padding-top: 65px;
+    margin: 0;
+}
+
 a {
   color: #FF6600;
 }
@@ -27,7 +35,20 @@ code {
     border: none;
 }
 
-/* Pad the ends of the Nav Bar */
-.navbar {
-    padding: 0 20px;
+.my-bs-light {
+    color: white;
 }
+
+/*.card-columns {
+    @include media-breakpoint-only(lg) {
+        column-count: 1;
+    }
+
+    @include media-breakpoint-only(xl) {
+        column-count: 5;
+    }
+
+    @include media-breakpoint-only(xxl) {
+        column-count: 5;
+    }
+}*/

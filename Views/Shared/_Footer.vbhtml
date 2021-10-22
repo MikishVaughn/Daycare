@@ -1,48 +1,43 @@
-﻿<!-- Footer -->
-<footer class="py-3">
+﻿@code
+    Dim copyright As String = "Copyright © " + Date.Now.Year.ToString + " by " + SiteHelpers.GetSiteInfo("SiteName")
+    Dim siteName = SiteHelpers.GetSiteInfo("SiteName")
 
-    <div class="row">
-        <div class="col-4">
+End Code
+<footer id="site-footer" class="site-footer pt-2" role="contentinfo" aria-label="Site footer">
+    <div class="site-footer__content" data-metrics-category="Global Footer" data-metrics-label="Footer">
+        <div class="site-footer__module-group">
 
-            <h5>Info</h5>
-            <ul class="nav flex-column">
-                <li class="nav-item mb-2"><a href="~/Info/About" class="nav-link p-0 text-muted">About</a></li>
-                <li class="nav-item mb-2"><a href="~/Info/Contact" class="nav-link p-0 text-muted">Contact</a></li>
-            </ul>
+            <div class="site-footer__module  ps-2">
+                <h6 class="site-footer__header">Info</h6>
+                <ul>
+                    <li class="site-footer__item"><a class="nav-link" href="~/Info/About">About Us</a></li>
+                    <li class="site-footer__item"><a class="nav-link" href="~/Info/Contact">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="site-footer__module">
+                <h6 class="site-footer__header">Features</h6>
+                <ul>
+                    <li class="site-footer__item"><a class="nav-link" href="~/Info/Schedule">Schedule</a></li>
+                    <li class="site-footer__item"><a class="nav-link" href="~/Merchandise/Store">Merchandise</a></li>
+                    <li class="site-footer__item"><a class="nav-link" href="~/Info/Fundraising">Fundraising</a></li>
+                </ul>
+            </div>
+
+            <div class="site-footer__module">
+                <h6 class="site-footer__header">Policies</h6>
+                <ul>
+                    <li class="site-footer__item"><a class="nav-link" href="~/Info/Privacy">Privacy Policy</a></li>
+                    <li class="site-footer__item"><a class="nav-link" href="~/Info/TOS">Terms of Service</a></li>
+                </ul>
+            </div>
+
         </div>
 
-        <div class="col-4">
-            <h5>Features</h5>
-            <ul class="nav flex-column">
-                <li class="nav-item mb-2"><a href="~/Merchandise/Store" class="nav-link p-0 text-muted">Merchandise</a></li>
-                <li class="nav-item mb-2"><a href="~/Info/Schedule" class="nav-link p-0 text-muted">Schedule of Events</a></li>
-                <li class="nav-item mb-2"><a href="~/Info/Fundraising" class="nav-link p-0 text-muted">Fundraising</a></li>
-            </ul>
-        </div>
-
-        <div class="col-4">
-            <h5>Policies</h5>
-            <ul class="nav flex-column">
-                <li class="nav-item mb-2"><a href="~/Info/TOS" class="nav-link p-0 text-muted">Terms of Service</a></li>
-                <li class="nav-item mb-2"><a href="~/Info/Privacy" class="nav-link p-0 text-muted">Privacy Policy</a></li>
-            </ul>
+        <div class="site-footer__module site-footer__module--secondary" style="color: #f2f2f2; background-color: #FF6600; margin: 0; padding: 0; width: 100%;">
+            <h6 style="font-size: 10px; text-align: center; margin: 0; padding: 5px 10px 12px 5px; color: white; text-shadow: 0px 0px 2px black;">@siteName &copy; @DateTime.Now.Year All Rights Reserved.</h6>
         </div>
 
     </div>
-
-    <!-- Timezone --> 
-    <div class="card my-4 py-3 text-center noborder">
-        <div id="timezone"></div>
-    </div>
-
 </footer>
 
-<script>
-    var timezonestring = Intl.DateTimeFormat().resolvedOptions().timeZone + " " + new Date().toTimeString().slice(9);
-    try {
-        document.getElementById("timezone").innerHTML = timezonestring;
-
-    } catch (e) {
-        // Do nothing. id probably doesn't exist.
-    }
-</script>

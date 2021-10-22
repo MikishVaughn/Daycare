@@ -1,22 +1,19 @@
-/* body - Necessary entries for Bootstrap NavBarv */
-body {   
-    overflow-y: scroll;
-    line-height: 1;
-    padding-top: 65px;
-    margin: 0;
+/* Logos */
+#biglogo {
+    height: 120px;
 }
 
-/* Logos */    
-#biglogo {
-    height: 160px;
-    }
-
-#brandlogo {
-    padding-right: 16px;
+.brandlogo {
+    padding-right: 8px;
     height: 40px;
 }
 
-#timezone {
+.brandlogo2 {
+    padding-left: 8px;
+    height: 40px;
+}
+
+#Copyright {
     text-align: center;
     margin-right: auto;
     margin-left: auto;
@@ -26,10 +23,9 @@ body {
     padding: 8px;
     margin-bottom: 7px;
     background-color: #FF6600;
-    color: transparent;
+    color: black;
     display: block;
     text-decoration: none;
-    text-shadow: .5px .5px 0 black, -.5px -.5px 0 black, 0 0 3px gray;
 }
 
 /* Define Gradient Heading CSS */
@@ -68,3 +64,94 @@ body {
     font-weight: normal;
     line-height: 18px;
 }
+
+/****************/
+/* Footer Stuff */
+/****************/
+
+footer {
+    height: 136px;
+}
+
+.site-footer__item a {
+    font-size: 12px;
+    font-weight: 400;
+    padding-left: 5px;
+    list-style-type: none;
+}
+
+    .site-footer__item a:focus,
+    .site-footer__item a:hover,
+    .site-footer__item a:active {
+        color: white;
+    }
+
+.site-footer {
+    clear: both;
+    margin-top: 5px;
+    position: relative;
+    background: black;
+}
+
+.site-footer__header {
+    font-family: "Knockout 31 4r", HelveticaNeue-CondensedBold, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 1.08px;
+    text-transform: uppercase;
+    -webkit-font-smoothing: antialiased;
+    color: burlywood;
+    margin-bottom: 0;
+    margin-right: 0;
+}
+
+.site-footer__module-group {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    font-weight: 700
+}
+
+    .site-footer__module-group .site-footer__item {
+        margin-bottom: 0;
+        color: #FF6600;
+        font-weight: 700
+    }
+
+        .site-footer__module-group .site-footer__item > a {
+            color: burlywood;
+            display: inline-block;
+            line-height: 1
+        }
+
+    .site-footer__module-group li:last-child .site-footer__item {
+        margin-bottom: 0
+    }
+
+.site-footer__module {
+    width: 33.33%;
+    padding: 0 0 0 2px;
+}
+
+    .site-footer__module ul {
+        margin: 0;
+        padding: 0;
+    }
+
+.site-footer__item {
+    list-style-type: none;
+}
+
+    .site-footer__item a {
+        font-size: 12px;
+        font-weight: 400;
+    }
+
+        .site-footer__item a:focus,
+        .site-footer__item a:hover,
+        .site-footer__item a:active {
+            color: white;
+        }

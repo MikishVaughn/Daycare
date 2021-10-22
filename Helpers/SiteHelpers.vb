@@ -31,8 +31,14 @@
         If AttributeName = "SiteDesigner" Then
             Return "The Mikish Group"
         End If
+        If AttributeName = "SiteEmailDesigner" Then
+            Return "Mikish@Mikish.com"
+        End If
         If AttributeName = "SiteDesignerURL" Then
             Return "https://mikish.com"
+        End If
+        If AttributeName = "SiteDesignerLogo" Then
+            Return "/Content/Images/Site/Catagories/Svg/BlueSun.svg"
         End If
 
         ' Site Specific Info:
@@ -45,6 +51,9 @@
             If AttributeName = "SiteName" Then
                 Return "Waterloo Bulldog Wrestling Club"
             End If
+            If AttributeName = "SiteNameShort" Then
+                Return "Bulldog Wrestling Club"
+            End If
 
             ' Site Description
             If AttributeName = "SiteDescription" Then
@@ -53,15 +62,33 @@
 
             ' Site URL
             If AttributeName = "SiteURL" Then
-                Return "http://mikish-001-site2.gtempurl.com/"
+                Return "http://Bulldog/illustrate.net"
+            End If
+
+            ' Site Contact
+            If AttributeName = "SiteContact" Then
+                Return "Tina Valdes"
+            End If
+
+            ' Site Address
+            If AttributeName = "Address1" Then
+                Return "Box 12345"
+            End If
+            If AttributeName = "Address2" Then
+                Return "Watereloo, IL 62298 "
             End If
 
             ' Site Email
+            If AttributeName = "SiteEmailContact" Then
+                Return "Tina@example.com"
+            End If
+
+            ' Site Sales and Support
             If AttributeName = "SiteEmailSales" Then
-                Return "MikishVaughn@Gmail.com"
+                Return "Sales@example.com"
             End If
             If AttributeName = "SiteEmailSupport" Then
-                Return "MikishVaughn@Gmail.com"
+                Return "Mikish.Vaughn@Gmail.com"
             End If
 
             ' Facebook Page
@@ -97,6 +124,9 @@
             If AttributeName = "SiteName" Then
                 Return "Waterloo Bulldog Wrestling Club"
             End If
+            If AttributeName = "SiteNameShort" Then
+                Return "Bulldog Wrestling Club"
+            End If
 
             ' Site Description
             If AttributeName = "SiteDescription" Then
@@ -105,15 +135,33 @@
 
             ' Site URL
             If AttributeName = "SiteURL" Then
-                Return "http://mikish-001-site2.gtempurl.com/"
+                Return "http://Bulldog/illustrate.net"
+            End If
+
+            ' Site Contact
+            If AttributeName = "SiteContact" Then
+                Return "Tina Valdes"
+            End If
+
+            ' Site Address
+            If AttributeName = "Address1" Then
+                Return "Box 12345"
+            End If
+            If AttributeName = "Address2" Then
+                Return "Watereloo, IL 62298 "
             End If
 
             ' Site Email
+            If AttributeName = "SiteEmailContact" Then
+                Return "Tina@example.com"
+            End If
+
+            ' Site Sales and Support
             If AttributeName = "SiteEmailSales" Then
-                Return "MikishVaughn@Gmail.com"
+                Return "Sales@example.com"
             End If
             If AttributeName = "SiteEmailSupport" Then
-                Return "MikishVaughn@Gmail.com"
+                Return "Mikish.Vaughn@Gmail.com"
             End If
 
             ' Facebook Page
@@ -137,7 +185,7 @@
                 Return "/Content/Images/Site/Catagories/PageImages/900x800-image-01.jpg"
             End If
             If AttributeName = "LinkShare" Then
-                Return "/Content/Images/Site/Catagories/LinkShares/1200-630-linkshare-01"
+                Return "/Content/Images/Site/Catagories/LinkShares/1200x630-linkshare-01"
             End If
         End If
 
@@ -148,6 +196,9 @@
         If AttributeName = "SiteName" Then
             Return "The Mikish Group"
         End If
+        If AttributeName = "Mikish" Then
+            Return "Bulldog Wrestling Club"
+        End If
 
         ' Site Description
         If AttributeName = "SiteDescription" Then
@@ -156,15 +207,33 @@
 
         ' Site URL
         If AttributeName = "SiteURL" Then
-            Return "http://mikish-001-site1.gtempurl.com/"
+            Return "https://Mikish.com/"
+        End If
+
+        ' Site Contact
+        If AttributeName = "SiteContact" Then
+            Return "Mikish Vaughn"
+        End If
+
+        ' Site Address
+        If AttributeName = "Address1" Then
+            Return "Box 12345"
+        End If
+        If AttributeName = "Address2" Then
+            Return "Vandalia, IL 62298 "
         End If
 
         ' Site Email
+        If AttributeName = "SiteEmailContact" Then
+            Return "Mikish@Mikish.com"
+        End If
+
+        ' Site Sales and Support
         If AttributeName = "SiteEmailSales" Then
-            Return "MikishVaughn@Gmail.com"
+            Return "Sales@Mikish.com"
         End If
         If AttributeName = "SiteEmailSupport" Then
-            Return "MikishVaughn@Gmail.com"
+            Return "Mikish@Mikish.com"
         End If
 
         ' Facebook Page
@@ -179,7 +248,7 @@
 
         ' Site Images
         If AttributeName = "BigLogo" Then
-            Return "/Content/Images/Catagories/Site/Svg/BlueSun.svg"
+            Return "/Content/Images/Site/Catagories/Svg/BlueSun.svg"
         End If
         If AttributeName = "SmallLogo" Then
             Return "/Content/Images/Site/Catagories/Svg/BlueSun.svg"

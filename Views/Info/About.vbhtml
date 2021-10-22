@@ -1,6 +1,6 @@
 ﻿@Code
 
-    ' Get Title and Site Name 
+    ' Get Title and Site Name
     ViewData("Title") = ViewData("Message")
 
     ' Get Site Info
@@ -16,33 +16,30 @@ End Code
 <div class="container px-4 px-lg-5">
 
     <!-- Heading Row-->
-    <div class="row gx-4 gx-lg-5 align-items-center my-5">
+    <div class="row gx-4 gx-lg-5 align-items-center my-3">
+
+        <!-- Brand Card -->
+        @Html.Partial("Cards/About/_Brand")
 
         <!-- Page Image -->
         <div class="col-lg-7">
             <img class="img-fluid rounded mb-4 mb-lg-0" src=@pageImage_About alt="Page Image" id="page-image" />
         </div>
 
-        <!-- Brand Card -->
-        @Html.Partial("Cards/_Brand")        
-
     </div>
 
-    <!-- Call to Action Card -->
-    @Html.Partial("Cards/_CallToAction")
-    
-
     <!-- Content Row-->
-    <div class="row gx-4 gx-lg-5">
+    <div class="row gx-1 gx-lg-5">
+  @*<div class="row gx-4 gx-lg-5">*@
 
         <!-- Card -->
-        @Html.Partial("Cards/_Merchandise")
+        @Html.Partial("Cards/About/_Merchandise")
 
         <!-- Card -->
-        @Html.Partial("Cards/_Schedule")
+        @Html.Partial("Cards/About/_Schedule")
 
         <!-- Card -->
-        @Html.Partial("Cards/_Other")
+        @Html.Partial("Cards/About/_Fundraising")
 
     </div>
 </div>

@@ -54,11 +54,15 @@ End Code
     <!-- Site Name -->
     <title>@siteName</title>
 
-    <!-- FavIcon -->
-    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <!-- FavIcon(s) (more than enough) -->
+    <link rel="icon" type="image/x-icon" href="~/Content/Images/Site/Catagories/Icons/Bulldog/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/~/Content/Images/Site/Catagories/Icons/Bulldog/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/~/Content/Images/Site/Catagories/Icons/Bulldog/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="~/Content/Images/Site/Catagories/Icons/Bulldog/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="~/Content/Images/Site/Catagories/Icons/Bulldog/android-chrome-512x512.png">
+    <link rel="shortcut icon" type="image/jpeg" href="~/Content/Images/Site/Catagories/Icons/Bulldog/android-chrome-192x192.png" />
+    <link rel="apple-touch-icon" type="image/pgn" href="~/Content/Images/Site/Catagories/Icons/Bulldog/android-chrome-192x192.png" />
+    <link rel="apple-touch-icon" type="image/pgn" sizes="180x180" href="~/Content/Images/Site/Catagories/Icons/Bulldog/apple-touch-icon.png">
 
     <!-- Link Share Setup -->
     <link rel="canonical" href="@canonical" />
@@ -89,7 +93,7 @@ End Code
 
     <!-- Site Local Css and Scss -->
     <link href="~/Css/styles.css" rel="stylesheet" />
-    <link href="~/Css/Custom.css" rel="stylesheet" />    
+    <link href="~/Css/Custom.css" rel="stylesheet" />
     <link href="~/Css/sitestyles.css" rel="stylesheet" />
 
     <!-- Site Local Scripts -->
@@ -97,7 +101,7 @@ End Code
 
 </head>
 
-<body>
+<body class="bg-info bg-gradient bg-opacity-50">
 
     <!-- Site Beginning -->
     <div class="container body-content">
@@ -108,13 +112,13 @@ End Code
 
             <!-- Main Content renders Info/About -->
             @RenderBody()
-            <hr />
-
-            <!-- Footer Menu -->
-            @Html.Partial("_Footer")
 
         </container>
     </div>
+    
+    <!-- Footer Menu -->
+    @Html.Partial("_Footer")
+
 </body>
 </html>
 
