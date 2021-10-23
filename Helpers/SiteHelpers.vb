@@ -25,7 +25,7 @@
     <AllowAnonymous>
     Public Shared Function GetSiteInfo(AttributeName As String) As String
 
-        Dim siteURL As String = RootUrl()
+        Dim siteURL As String = LCase(RootUrl())
 
         ' Site Designer
         If AttributeName = "SiteDesigner" Then
@@ -41,11 +41,9 @@
             Return "/Content/Images/Site/Catagories/Svg/BlueSun.svg"
         End If
 
-        ' Site Specific Info:
-
         '' Running Local
         '' (Show Bulldog) 
-        If HttpContext.Current.Request.IsLocal Then
+        If HttpContext.Current.Request.IsLocal Or siteURL.Contains("bulldog") Then
 
             ' Site Name
             If AttributeName = "SiteName" Then
@@ -93,7 +91,7 @@
 
             ' Facebook Page
             If AttributeName = "SiteFacebookPageURL" Then
-                Return "https://www.facebook.com/groups/2282063028779306"
+                Return "https://www.facebook.com/jessischloemann/"
             End If
 
             ' Google Maps Location
@@ -109,84 +107,12 @@
                 Return "/Content/Images/Site/Catagories/Svg/BD-Head-Right-03.svg"
             End If
             If AttributeName = "PageImage_About" Then
-                Return "/Content/Images/Site/Catagories/PageImages/900x800-image-01.jpg"
+                Return "/Content/Images/Site/Catagories/PageImages/900x800-image-03.jpg"
             End If
             If AttributeName = "LinkShare" Then
                 Return "/Content/Images/Site/Catagories/LinkShares/1200x630-linkshare-01"
             End If
 
-        End If
-
-        '' URL contains "Bulldog"
-        If siteURL.Contains("Bulldog") Or siteURL.Contains("bulldog") Then
-
-            ' Site Name
-            If AttributeName = "SiteName" Then
-                Return "Waterloo Bulldog Wrestling Club"
-            End If
-            If AttributeName = "SiteNameShort" Then
-                Return "Bulldog Wrestling Club"
-            End If
-
-            ' Site Description
-            If AttributeName = "SiteDescription" Then
-                Return "This web site is dedicated to the Bulldog Wrestlers!"
-            End If
-
-            ' Site URL
-            If AttributeName = "SiteURL" Then
-                Return "http://Bulldog/illustrate.net"
-            End If
-
-            ' Site Contact
-            If AttributeName = "SiteContact" Then
-                Return "Tina Valdes"
-            End If
-
-            ' Site Address
-            If AttributeName = "Address1" Then
-                Return "Box 12345"
-            End If
-            If AttributeName = "Address2" Then
-                Return "Watereloo, IL 62298 "
-            End If
-
-            ' Site Email
-            If AttributeName = "SiteEmailContact" Then
-                Return "Tina@example.com"
-            End If
-
-            ' Site Sales and Support
-            If AttributeName = "SiteEmailSales" Then
-                Return "Sales@example.com"
-            End If
-            If AttributeName = "SiteEmailSupport" Then
-                Return "Mikish.Vaughn@Gmail.com"
-            End If
-
-            ' Facebook Page
-            If AttributeName = "SiteFacebookPageURL" Then
-                Return "https://www.facebook.com/groups/2282063028779306"
-            End If
-
-            ' Google Maps Location
-            If AttributeName = "SiteGoogleMapURL" Then
-                Return "https://www.google.com/maps/@38.3357011,-90.1490775,4135m/data=!3m1!1e3"
-            End If
-
-            ' Site Images
-            If AttributeName = "BigLogo" Then
-                Return "/Content/Images/Site/Catagories/Svg/BD-Body-01.svg"
-            End If
-            If AttributeName = "SmallLogo" Then
-                Return "/Content/Images/Site/Catagories/Svg/BD-Head-Right-03.svg"
-            End If
-            If AttributeName = "PageImage_About" Then
-                Return "/Content/Images/Site/Catagories/PageImages/900x800-image-01.jpg"
-            End If
-            If AttributeName = "LinkShare" Then
-                Return "/Content/Images/Site/Catagories/LinkShares/1200x630-linkshare-01"
-            End If
         End If
 
         ' Site URL not Local and name not caught for specific settings

@@ -19,6 +19,7 @@
     margin-left: auto;
 }
 
+/* Define Gradient Heading CSS ( used in TOS and Privacy */
 #myBox {
     padding: 8px;
     margin-bottom: 7px;
@@ -28,7 +29,6 @@
     text-decoration: none;
 }
 
-/* Define Gradient Heading CSS */
 .goldGradient {
     background: linear-gradient(to right, #FF6600 0%, transparent 100%);
     padding-top: 15px;
@@ -155,3 +155,15 @@ footer {
         .site-footer__item a:active {
             color: white;
         }
+
+
+/* Iframe style for Schedule and Fundraising display */
+div, iframe {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+iframe {
+    display: block;
+    border-style: none;
+}

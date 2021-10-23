@@ -1,7 +1,8 @@
 ﻿@Code
-    ViewData("Title") = "Schedule"
+    ViewData("Title") = "High School Schedule"
 End Code
 
-<h2>@ViewData("Title").</h2>
-
-<p>Use this area to provide additional information.</p>
+<h2 class="text-center">@ViewData("Title")</h2>
+<div class="center">
+    @Html.Partial("Cards/Schedule/_HighSchool")
+</div>

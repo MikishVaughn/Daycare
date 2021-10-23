@@ -1,8 +1,8 @@
 ﻿@code
     Dim altText As String = ViewData("PageHeader")
-    Dim category As String = ViewData("Message")
-    Dim imageLocation As String = SiteHelpers.GetImageLocation() + "Categories/" + category + "/"
-    Dim imageCount As Integer = SiteHelpers.MaxImages(category)
+    Dim folder As String = ViewData("Message")
+    Dim imageLocation As String = SiteHelpers.GetImageLocation() + "site/Carousel/" + folder + "/"
+    Dim imageCount As Integer = SiteHelpers.MaxImages(folder)
 End Code
 
 <!-- Input imageLink -->

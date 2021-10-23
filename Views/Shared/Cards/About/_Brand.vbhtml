@@ -13,10 +13,7 @@ End Code
 <div class="col-lg-5">
     <div class="card h-100 bg-info noborder">
         <div class="card-body text-center">
-
-            <!-- No Title -->
-            <h2 class="card-title"></h2>
-
+            
             <!-- Show  Big Logo -->
             <img style="height:  160px; width: 360px;" src=@BigLogo class="img-fluid" alt="Responsive Big Logo" id="big-logo" />
 
@@ -25,10 +22,10 @@ End Code
             <h2 class="font-weight-light">@siteName2</h2>
 
             <!-- Site Discription -->
-            <p class="card-text">@siteDescription</p>
+            @*<p class="card-text">@siteDescription</p>*@
 
             <!-- Call to Action Button -->
-            <a class="btn btn-primary" href="~/Info/Fundraising">Call to Action!</a>
+            @*<a class="btn btn-primary" href="~/Info/Fundraising">Call to Action!</a>*@
 
         </div>
     </div>

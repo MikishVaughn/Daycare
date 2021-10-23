@@ -38,17 +38,3 @@ code {
 .my-bs-light {
     color: white;
 }
-
-/*.card-columns {
-    @include media-breakpoint-only(lg) {
-        column-count: 1;
-    }
-
-    @include media-breakpoint-only(xl) {
-        column-count: 5;
-    }
-
-    @include media-breakpoint-only(xxl) {
-        column-count: 5;
-    }
-}*/

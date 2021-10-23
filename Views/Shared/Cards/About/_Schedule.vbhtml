@@ -1,4 +1,4 @@
-﻿<div class="col-md-4 mb-3">
+﻿<div class="container col-md-4 mb-3">
     <div class="card h-100">
         <div class="card-body">
             <h2 class="card-title">Our Schedule</h2>
