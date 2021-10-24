@@ -32,7 +32,7 @@
             Return "The Mikish Group"
         End If
         If AttributeName = "SiteEmailDesigner" Then
-            Return "Mikish@Mikish.com"
+            Return "Mikish.Vaughn@Gmail.com"
         End If
         If AttributeName = "SiteDesignerURL" Then
             Return "https://mikish.com"
@@ -65,20 +65,25 @@
 
             ' Site Contact
             If AttributeName = "SiteContact" Then
-                Return "Tina Valdes"
+                Return "Butch Schloemann"
             End If
 
             ' Site Address
             If AttributeName = "Address1" Then
-                Return "Box 12345"
+                Return "1107 s. Main st"
             End If
             If AttributeName = "Address2" Then
-                Return "Watereloo, IL 62298 "
+                Return "Red Bud, Illinois 62278"
+            End If
+
+            ' Phone
+            If AttributeName = "Phone1" Then
+                Return "314-712-3403"
             End If
 
             ' Site Email
             If AttributeName = "SiteEmailContact" Then
-                Return "Tina@example.com"
+                Return "waterloowrestling@yahoo.com"
             End If
 
             ' Site Sales and Support
@@ -96,15 +101,15 @@
 
             ' Google Maps Location
             If AttributeName = "SiteGoogleMapURL" Then
-                Return "https://www.google.com/maps/@38.3357011,-90.1490775,4135m/data=!3m1!1e3"
+                Return "https://www.google.com/maps/place/1107+S+Main+St,+Red+Bud,+IL+62278/@38.201692,-89.9953916,536m/data=!3m1!1e3!4m5!3m4!1s0x88762764bbdbc3e5:0xebb720ff8b455ab2!8m2!3d38.2014852!4d-89.994499"
             End If
 
             ' Site Images
             If AttributeName = "BigLogo" Then
-                Return "/Content/Images/Site/Catagories/Svg/BD-Body-01.svg"
+                Return "/Content/Images/Site/Catagories/Svg/BD-Body.svg"
             End If
             If AttributeName = "SmallLogo" Then
-                Return "/Content/Images/Site/Catagories/Svg/BD-Head-Right-03.svg"
+                Return "/Content/Images/Site/Catagories/Svg/BD-Head-Right-Smile.svg"
             End If
             If AttributeName = "PageImage_About" Then
                 Return "/Content/Images/Site/Catagories/PageImages/900x800-image-03.jpg"

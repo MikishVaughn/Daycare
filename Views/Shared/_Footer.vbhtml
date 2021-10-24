@@ -34,7 +34,7 @@ End Code
 
         </div>
 
-        <div class="site-footer__module site-footer__module--secondary" style="color: #f2f2f2; background-color: #FF6600; margin: 0; padding: 0; width: 100%;">
+        <div class="site-footer__module site-footer__module--secondary" style="color: #f2f2f2; background-color: #60605F; margin: 0; padding: 0; width: 100%;">
             <h6 style="font-size: 10px; text-align: center; margin: 0; padding: 5px 10px 12px 5px; color: white; text-shadow: 0px 0px 2px black;">@siteName &copy; @DateTime.Now.Year All Rights Reserved.</h6>
         </div>
 

@@ -11,7 +11,7 @@
 End Code
 
 <div class="col-lg-5">
-    <div class="card h-100 bg-info noborder">
+    <div class="card h-100 bg-secondary noborder">
         <div class="card-body text-center">
             
             <!-- Show  Big Logo -->
@@ -31,6 +31,6 @@ End Code
     </div>
 
     <!-- Call to Action Card -->
-    @Html.Partial("Cards/About/_CallToAction")
+    @Html.Partial("Cards/About/_Description")
 
 </div>

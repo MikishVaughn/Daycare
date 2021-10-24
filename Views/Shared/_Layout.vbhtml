@@ -101,10 +101,10 @@ End Code
 
 </head>
 
-<body class="bg-info bg-gradient bg-opacity-50">
+<body class="bg-light bg-gradient bg-opacity-50">
 
     <!-- Site Beginning -->
-    <div class="container body-content">
+    <div class="container body-content px-0">
         <container>
 
             <!-- Header NavBar -->

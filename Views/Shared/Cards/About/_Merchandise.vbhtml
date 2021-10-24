@@ -5,6 +5,8 @@
             <p class="card-text">Get your Swag here!</p>
             <p>Check out the links to our branded gear so you are styling while showing your support for the Bulldog Wrestlers.</p>
         </div>
-        <div class="card-footer"><a class="btn btn-primary btn-sm" href="~/Merchandise/Store">More Info</a></div>
+        <div class="card-footer w-100 text-center">
+            <a class="btn btn-primary btn-sm" href="~/Merchandise/Store">More Info</a>
+        </div>
     </div>
 </div>

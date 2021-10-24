@@ -179,6 +179,54 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="ArtWork\BD-Body\BD-Body.ai" />
+    <Content Include="ArtWork\BD-Body\BD-Body.png" />
+    <Content Include="ArtWork\BD-Body\BD-Body.svg" />
+    <Content Include="ArtWork\BD-Head\BD-Head-School\BD-Head-L.ai" />
+    <Content Include="ArtWork\BD-Head\BD-Head-School\BD-Head-L.png" />
+    <Content Include="ArtWork\BD-Head\BD-Head-School\BD-Head-L.svg" />
+    <Content Include="ArtWork\BD-Head\BD-Head-School\BD-Head-R.ai" />
+    <Content Include="ArtWork\BD-Head\BD-Head-School\BD-Head-R.png" />
+    <Content Include="ArtWork\BD-Head\BD-Head-School\BD-Head-R.svg" />
+    <Content Include="ArtWork\BD-Head\BD-Head-Smile\BD-Head-Smile-L.ai" />
+    <Content Include="ArtWork\BD-Head\BD-Head-Smile\BD-Head-Smile-L.png" />
+    <Content Include="ArtWork\BD-Head\BD-Head-Smile\BD-Head-Smile-L.svg" />
+    <Content Include="ArtWork\BD-Head\BD-Head-Smile\BD-Head-Smile-R.ai" />
+    <Content Include="ArtWork\BD-Head\BD-Head-Smile\BD-Head-smile-R.png" />
+    <Content Include="ArtWork\BD-Head\BD-Head-Smile\BD-Head-Smile-R.svg" />
+    <Content Include="ArtWork\BD-Head\BD-Head-Two-Tooth\BD-Head-Two-Tooth-L.ai" />
+    <Content Include="ArtWork\BD-Head\BD-Head-Two-Tooth\BD-Head-Two-Tooth-L.png" />
+    <Content Include="ArtWork\BD-Head\BD-Head-Two-Tooth\BD-Head-Two-Tooth-L.svg" />
+    <Content Include="ArtWork\BD-Head\BD-Head-Two-Tooth\BD-Head-Two-Tooth-R.ai" />
+    <Content Include="ArtWork\BD-Head\BD-Head-Two-Tooth\BD-Head-Two-Tooth-R.png" />
+    <Content Include="ArtWork\BD-Head\BD-Head-Two-Tooth\BD-Head-Two-Tooth-R.svg" />
+    <Content Include="ArtWork\Icons\Bulldog\android-chrome-192x192.png" />
+    <Content Include="ArtWork\Icons\Bulldog\android-chrome-512x512.png" />
+    <Content Include="ArtWork\Icons\Bulldog\apple-touch-icon.png" />
+    <Content Include="ArtWork\Icons\Bulldog\favicon-16x16.png" />
+    <Content Include="ArtWork\Icons\Bulldog\favicon-32x32.png" />
+    <Content Include="ArtWork\Icons\Bulldog\favicon.ico" />
+    <Content Include="ArtWork\Misc\BD-Head-two-tooth-outline.psd" />
+    <Content Include="ArtWork\Misc\Bulldog-Wrestlin-Club-logo.psd" />
+    <Content Include="ArtWork\Misc\Buttons\FB-Home.png" />
+    <Content Include="ArtWork\Misc\Buttons\FB-Home.svg" />
+    <Content Include="ArtWork\Misc\Buttons\FB-Square.png" />
+    <Content Include="ArtWork\Misc\Buttons\FB-Square.svg" />
+    <Content Include="ArtWork\Misc\Buttons\Google-Square.png" />
+    <Content Include="ArtWork\Misc\Buttons\Google-Square.svg" />
+    <Content Include="ArtWork\Misc\Sunset\1200x630-Linkshare-02.jpg" />
+    <Content Include="ArtWork\Misc\Sunset\1500x1050-image-02.jpg" />
+    <Content Include="ArtWork\Misc\Sunset\900x600-image-02.jpg" />
+    <Content Include="ArtWork\Misc\Sunset\900x800-image-02.jpg" />
+    <Content Include="ArtWork\Misc\The Mikish Group Logo\BlueSun.png" />
+    <Content Include="ArtWork\Misc\The Mikish Group Logo\BlueSun.svg" />
+    <Content Include="ArtWork\Misc\The Mikish Group Logo\Copyright.txt" />
+    <Content Include="ArtWork\Misc\UglyDog\UglyDog-outline.png" />
+    <Content Include="ArtWork\Misc\UglyDog\UglyDog-outline.psd" />
+    <Content Include="ArtWork\Misc\UglyDog\UglyDog.ai" />
+    <Content Include="ArtWork\Misc\UglyDog\UglyDog.png" />
+    <Content Include="ArtWork\Misc\UglyDog\UglyDog.psd" />
+    <Content Include="ArtWork\Misc\UglyDog\UglyDog.svg" />
     <Content Include="Content\Images\Site\Carousel\About\000001.jpg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
@@ -204,19 +252,17 @@
     <Content Include="Content\Images\Site\Catagories\PageImages\900x800-image-01.jpg" />
     <Content Include="Content\Images\Site\Catagories\PageImages\900x800-image-02.jpg" />
     <Content Include="Content\Images\Site\Catagories\PageImages\900X800-image-03.jpg" />
-    <Content Include="Content\Images\Site\Catagories\Svg\BD-Body-01.svg" />
     <Content Include="Content\Images\Site\Catagories\Svg\BD-Body.svg" />
-    <Content Include="Content\Images\Site\Catagories\Svg\BD-Head-02.svg" />
-    <Content Include="Content\Images\Site\Catagories\Svg\BD-Head-03.svg" />
-    <Content Include="Content\Images\Site\Catagories\Svg\BD-Head-Right-01.svg" />
-    <Content Include="Content\Images\Site\Catagories\Svg\BD-Head-Right-02.svg" />
-    <Content Include="Content\Images\Site\Catagories\Svg\BD-Head-Right-03.svg" />
-    <Content Include="Content\Images\Site\Catagories\Svg\BD-Head-Right-04.svg" />
-    <Content Include="Content\Images\Site\Catagories\Svg\BD-Head-Right-04a.svg" />
+    <Content Include="Content\Images\Site\Catagories\Svg\BD-Head-Right.svg" />
+    <Content Include="Content\Images\Site\Catagories\Svg\BD-Head-Right-Smile.svg" />
     <Content Include="Content\Images\Site\Catagories\Svg\BlueSun.svg" />
     <Content Include="Content\Images\Site\Catagories\Svg\FB-Home.svg" />
     <Content Include="Content\Images\Site\Catagories\Svg\FB-Square.svg" />
     <Content Include="Content\Images\Site\Catagories\Svg\Google-Square.svg" />
+    <Content Include="ArtWork\Misc\Buttons\FB-Home.ai" />
+    <Content Include="ArtWork\Misc\Buttons\FB-Square.ai" />
+    <Content Include="ArtWork\Misc\Buttons\Google-Square.ai" />
+    <Content Include="ArtWork\Misc\The Mikish Group Logo\BlueSun.ai" />
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>
@@ -241,16 +287,15 @@
     <Content Include="Views\Info\TOS.vbhtml" />
     <Content Include="Views\Shared\_Footer.vbhtml" />
     <Content Include="Views\Merchandise\Store.vbhtml" />
-    <Content Include="Views\Shared\Cards\_Contact.vbhtml" />
+    <Content Include="Views\Shared\Cards\_Designer.vbhtml" />
     <Content Include="Views\Shared\Cards\About\_Fundraising.vbhtml" />
     <Content Include="Views\Shared\Cards\About\_Merchandise.vbhtml" />
     <Content Include="Views\Shared\Cards\About\_Schedule.vbhtml" />
     <Content Include="Views\Shared\Cards\About\_Brand.vbhtml" />
-    <Content Include="Views\Shared\Cards\About\_CallToAction.vbhtml" />
+    <Content Include="Views\Shared\Cards\About\_Description.vbhtml" />
     <Content Include="Views\Shared\_Carousel.vbhtml" />
     <Content Include="Views\Info\Fundraising.vbhtml" />
-    <Content Include="Views\Shared\Cards\Schedule\_HighSchool.vbhtml" />
-    <Content Include="Views\Shared\Cards\Fundraising\_Fundraising.vbhtml" />
+    <Content Include="Views\Shared\Cards\_Contact.vbhtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Global.asax" />

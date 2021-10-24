@@ -6,7 +6,7 @@ End Code
 
 <!-- TOS Policy -->
 <div style="color: white; margin-left: auto; margin-right: auto; text-align: center; max-width:90%;">
-   
+
     <h1 id="myBox">Terms Of Service</h1>
 
     <!-- TOS Content -->
@@ -105,4 +105,4 @@ End Code
 </div>
 
 <!-- Contact Info -->
-@Html.Partial("cards\_Contact")
+@Html.Partial("Cards/_Contact")

@@ -23,21 +23,21 @@
 #myBox {
     padding: 8px;
     margin-bottom: 7px;
-    background-color: #FF6600;
+    background-color: #60605F;
     color: black;
     display: block;
     text-decoration: none;
 }
 
 .goldGradient {
-    background: linear-gradient(to right, #FF6600 0%, transparent 100%);
+    background: linear-gradient(to right, #60605F 0%, transparent 100%);
     padding-top: 15px;
     padding-bottom: 15px;
 }
 
 .gradientheading {
     width: auto;
-    background: linear-gradient(90deg, #FF6600, transparent 100%);
+    background: linear-gradient(90deg, #60605F, transparent 100%);
     color: black;
     padding: 5px 10px;
     margin: 10px 0 0 0;
@@ -100,7 +100,7 @@ footer {
     letter-spacing: 1.08px;
     text-transform: uppercase;
     -webkit-font-smoothing: antialiased;
-    color: burlywood;
+    color: rgb(204, 193, 179);
     margin-bottom: 0;
     margin-right: 0;
 }
@@ -117,12 +117,12 @@ footer {
 
     .site-footer__module-group .site-footer__item {
         margin-bottom: 0;
-        color: #FF6600;
+        color: rgb(204, 193, 179);
         font-weight: 700
     }
 
         .site-footer__module-group .site-footer__item > a {
-            color: burlywood;
+            color: rgb(204, 193, 179);
             display: inline-block;
             line-height: 1
         }

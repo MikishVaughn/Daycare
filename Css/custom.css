@@ -9,7 +9,7 @@ body {
 }
 
 a {
-  color: #FF6600;
+  color: #60605F;
 }
 
 code {
@@ -18,16 +18,16 @@ code {
 
 .btn-primary {
     color: #fff;
-    background-color: #FF6600;
-    border-color: #B94B00;
+    background-color: #60605F;
+    border-color: #3A3A3A;
 }
 
     .btn-primary:focus,
     .btn-primary:active,
     .btn-primary:hover {
         color: #000000;
-        background-color: #FF8F46;
-        border-color: #FF6600;
+        background-color: #AEAEAE;
+        border-color: #1E1E1E;
     }
 
     /* No Border around the Brand box */
