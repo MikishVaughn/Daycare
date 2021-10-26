@@ -6,12 +6,7 @@
 
 End Code
 
-<!-- Input imageLink -->
-@*<input type="text" spellcheck="false" value="" id="imageLink">*@
-
 <!-- Carousel for Picture slides -->
-
-
 <div id="CarouselControl" class="carousel slide py-2" data-bs-ride="carousel">
 
     <!-- The slideshow -->
