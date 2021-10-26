@@ -184,10 +184,10 @@ function newTab(tabURL) {
 function createImageList(imageLocation, altText, imageCount) {
     altText = "";
     var i = imageCount;
-    var text = "<div class='carousel-item active'><img src='" + imageLocation.concat("000000".concat(i).slice(-6)) + ".jpg' alt='" + altText.concat("000000".concat(imageCount).slice(-6)) + "' /></img></div>";
+    var text = "<div class='carousel-item active'><img class='d-block w-100' src='" + imageLocation.concat("000000".concat(i).slice(-6)) + ".jpg' alt='" + altText.concat("000000".concat(imageCount).slice(-6)) + "' /></div>";
     i--;
     while (i > 0) {
-        text += "<div class='carousel-item'><img src='" + imageLocation.concat("000000".concat(i).slice(-6)) + ".jpg' alt='" + altText.concat("000000".concat(i).slice(-6)) + "' /></img></div>";
+        text += "<div class='carousel-item'><img class='d-block w-100' src='" + imageLocation.concat("000000".concat(i).slice(-6)) + ".jpg' alt='" + altText.concat("000000".concat(i).slice(-6)) + "' /></div>";
         i--;
     }
     document.getElementById("CarouselItems").innerHTML = text;

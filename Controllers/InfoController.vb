@@ -2,7 +2,8 @@
     Inherits System.Web.Mvc.Controller
     Function About() As ActionResult
         ViewData("Message") = "About"
-        ViewData("PageTitle") = "Fishing"
+        ViewData("PageHeader") = ViewData("Message")
+        ViewData("PageTitle") = ViewData("Message")
         Return View()
     End Function
 

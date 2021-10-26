@@ -1,43 +1,37 @@
 ﻿@Code
     ' Get Title and Site Name
     ViewData("Title") = ViewData("Message")
-
-    ' Get Site Info
-    Dim siteName As String = SiteHelpers.GetSiteInfo("SiteName")
-    Dim siteDescription As String = SiteHelpers.GetSiteInfo("SiteDescription")
-
-    ' Page Image(s)
-    Dim pageImage_About As String = "/Content/Images/Site/Carousel/About/000006.jpg"
-    'SiteHelpers.GetSiteInfo("PageImage_About")
 End Code        
 
 <div Class="container px-4 px-lg-5">
 
     <!-- Heading Row-->
-    <div Class="row gx-4 gx-lg-5 align-items-center my-3">
+    <div Class="row gx-4 gx-lg-5 align-items-end my-3">
 
         <!-- Brand Card -->
         @Html.Partial("Cards/About/_Brand")
 
-        <!-- Page Image -->
-        <div class="col-lg-7">
+        <!-- Page Image Carousel -->
+        @Html.Partial("_Carousel")
+
+        <!-- Show Single Image -->
+        @*<div class="col-lg-7">
             <img class="img-fluid rounded mb-4 mb-lg-0 p-0" src=@pageImage_About alt="Page Image" id="page-image" />
-        </div>
+        </div>*@
 
     </div>
 
     <!-- Content Row-->
     <div class="row gx-1 gx-lg-5">
-  @*<div class="row gx-4 gx-lg-5">*@
 
-        <!-- Card -->
-        @Html.Partial("Cards/About/_Merchandise")
-
-        <!-- Card -->
+        <!-- Schedule Card -->
         @Html.Partial("Cards/About/_Schedule")
 
-        <!-- Card -->
+        <!-- Fundraising Card -->
         @Html.Partial("Cards/About/_Fundraising")
+
+        <!-- Merchandise Card -->
+        @Html.Partial("Cards/About/_Merchandise")
 
     </div>
 </div>

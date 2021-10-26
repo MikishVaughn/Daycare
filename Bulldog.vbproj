@@ -230,15 +230,12 @@
     <Content Include="Content\Images\Site\Carousel\About\000001.jpg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Content\Images\Site\Carousel\About\000002.jpg" />
-    <Content Include="Content\Images\Site\Carousel\About\000003.jpg" />
-    <Content Include="Content\Images\Site\Carousel\About\000004.jpg" />
-    <Content Include="Content\Images\Site\Carousel\About\000005.jpg" />
     <Content Include="Content\Images\Site\Carousel\About\000006.jpg" />
+    <Content Include="Content\Images\Site\Carousel\About\000004.jpg" />
+    <Content Include="Content\Images\Site\Carousel\About\000003.jpg" />
+    <Content Include="Content\Images\Site\Carousel\About\000005.jpg" />
     <Content Include="Content\Images\Site\Carousel\About\000007.jpg" />
-    <Content Include="Content\Images\Site\Carousel\About\000008.jpg" />
-    <Content Include="Content\Images\Site\Carousel\About\000009.jpg" />
-    <Content Include="Content\Images\Site\Carousel\About\000010.jpg" />
+    <Content Include="Content\Images\Site\Carousel\About\000002.jpg" />
     <Content Include="Content\Images\Site\Catagories\Icons\Bulldog\android-chrome-192x192.png" />
     <Content Include="Content\Images\Site\Catagories\Icons\Bulldog\android-chrome-512x512.png" />
     <Content Include="Content\Images\Site\Catagories\Icons\Bulldog\apple-touch-icon.png" />
@@ -277,6 +274,7 @@
     <None Include="packages.config" />
     <Content Include="Css\custom.css" />
     <Content Include="Css\styles.css" />
+    <Content Include="Scripts\jquery.min.js" />
     <Content Include="Scripts\sitescripts.js" />
     <Content Include="Views\Shared\_Header.vbhtml" />
     <Content Include="Views\Info\About.vbhtml" />

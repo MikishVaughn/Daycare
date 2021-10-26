@@ -18,7 +18,7 @@ End Code
 
     <!-- Please Contact us Text -->
     <div class="pt-4">
-        <h3 class="font-weight-bold">Contact Us:</h3>
+        <h3 class="font-weight-bold">Contact Us</h3>
     </div>
 
     <!-- Contact Info box -->

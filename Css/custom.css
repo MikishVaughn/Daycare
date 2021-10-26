@@ -38,3 +38,10 @@ code {
 .my-bs-light {
     color: white;
 }
+
+.carousel-inner {
+    border-radius: 5px;
+    overflow: hidden;
+    color: white;
+    width: 100%;
+}

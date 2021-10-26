@@ -1,19 +1,6 @@
 ﻿Public Class SiteHelpers
 
-    ' GetImageLocation 
-    '********************
-    '
-    <AllowAnonymous>
-    Public Shared Function GetImageLocation() As String
 
-        Dim ImageLocation As String = "~/Content/Images/"
-        If HttpContext.Current.Request.IsLocal Then
-            ImageLocation = "/Content/Images/"
-        End If
-
-        Return ImageLocation
-
-    End Function
     ' GetSiteInfo      
     '********************
     '
@@ -195,6 +182,7 @@
         Return "Oops!" ' :-(
 
     End Function
+
     ' RootURL()        
     '********************
     '
@@ -204,41 +192,43 @@
     Public Shared Function RootUrl() As String
         Return HttpContext.Current.Request.Url.GetLeftPart(UriPartial.Authority) + VirtualPathUtility.ToAbsolute("~/")
     End Function
-    ' MaxImages() 
+
+    ' ImageCount() 
     '********************
     '
-    ' Returns the image count in an image folder.
+    ' Returns the image count in a carousel image folder.
     '
     <AllowAnonymous>
-    Public Shared Function MaxImages(Msg As String) As Integer
+    Public Shared Function ImageCount(Msg As String) As Integer
 
-        Dim imageCount As Integer = 1
+        Dim Count As Integer = 1
         Try
             If HttpContext.Current.Request.IsLocal Then
-                imageCount = IO.Directory.GetFiles("D:\Projects\Repos\Bulldog\Content\Images\Categories\" + Msg, "*.jpg").Length()
+                Count = IO.Directory.GetFiles("D:\Projects\Repos\Bulldog\Content\Images\Site\Carousel\" + Msg + "\", "*.jpg").Length()
             Else
-                imageCount = IO.Directory.GetFiles("h:\root\home\mikish-001\www\site2\Content\Images\Categories\" + Msg, "*.jpg").Length()
-                Try
-                    imageCount = IO.Directory.GetFiles("h:\root\home\mikish-001\www\site1\Content\Images\Categories\" + Msg, "*.jpg").Length()
-                Catch ex As Exception
-                    imageCount = IO.Directory.GetFiles("G:\PleskVhosts\mikish.com\httpdocs\Content\Images\Categories\" + Msg, "*.jpg").Length()
-                End Try
-
-                '' For Info Purposes:
-                ''
-                '' GoDaddy.com
-                '' imageCount = IO.Directory.GetFiles("G:\PleskVhosts\mikish.com\httpdocs\Content\Images\Categories\" + Msg, "*.jpg").Length()
-
-                '' MyAsp.net
-                '' imageCount = IO.Directory.GetFiles("h:\root\home\mikish-001\www\site1\Content\Images\Categories\" + Msg, "*.jpg").Length()
-
+                Count = IO.Directory.GetFiles("h:\root\home\mikish-001\www\bulldog\content\images\site\Carousel\" + Msg + "\", "*.jpg").Length()
             End If
         Catch ex As Exception
             MsgBox("Image Directory Not Found", MsgBoxStyle.Critical)
-            Return imageCount
+            Return Count
         End Try
 
-        Return imageCount
+        Return Count
+
+    End Function
+
+    ' GetImageLocation 
+    '********************
+    '
+    <AllowAnonymous>
+    Public Shared Function GetImageLocation() As String
+
+        Dim ImageLocation As String = "/Content/Images/"
+        If HttpContext.Current.Request.IsLocal Then
+            ImageLocation = "/Content/Images/"
+        End If
+
+        Return ImageLocation
 
     End Function
 

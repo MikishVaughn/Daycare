@@ -1,4 +1,4 @@
-﻿<div class="col-md-4 mb-3">
+﻿<div class="col-md-4 mb-2">
     <div class="card h-100">
         <div class="card-body w-100">
             <h2 class="card-title">Fundraising</h2>
