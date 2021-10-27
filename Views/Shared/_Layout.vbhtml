@@ -1,7 +1,4 @@
 ﻿@code
-    ' Page background
-    Dim backgroundColor As String = "#000"
-    Dim backgroundImage As String = SiteHelpers.GetImageLocation() + "Categories/Backgrounds/main-bg.jpg"
 
     ' Get Site Info From SiteHelers class where it is stored.
     Dim siteURL As String = SiteHelpers.GetSiteInfo("SiteURL")
@@ -26,14 +23,12 @@
         Case "About", "Contact", "Events", "Store"
             ogTitle = ViewData("Message") + " " + siteName
             ogDescription = ViewData("Message")
-            backgroundColor = "#000000"
             ogImage = linkShareImage
             canonical = siteURL + "/Info/" + ViewData("Message")
 
         Case "Privacy Policy", "Terms of Service", "Contact"
             ogTitle = ViewData("Message") + " " + siteName
             ogDescription = ViewData("Message")
-            backgroundColor = "#000000"
             ogImage = linkShareImage
             canonical = siteURL + "/Info/" + ViewData("Message")
     End Select
