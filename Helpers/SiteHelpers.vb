@@ -1,6 +1,5 @@
 ﻿Public Class SiteHelpers
 
-
     ' GetSiteInfo      
     '********************
     '
@@ -29,53 +28,53 @@
         End If
 
         '' Running Local
-        '' (Show Bulldog) 
-        If HttpContext.Current.Request.IsLocal Or siteURL.Contains("bulldog") Then
+        '' (Show Dayare) 
+        If HttpContext.Current.Request.IsLocal Or siteURL.Contains("daycare") Then
 
             ' Site Name
             If AttributeName = "SiteName" Then
-                Return "Waterloo Bulldog Wrestling Club"
+                Return "The Daycare Center"
             End If
             If AttributeName = "SiteNameShort" Then
-                Return "Bulldog Wrestling Club"
+                Return "The Daycare Center"
             End If
 
             ' Site Description
             If AttributeName = "SiteDescription" Then
-                Return "This web site is dedicated to the Bulldog Wrestlers!"
+                Return "This web site is to provide information on The Daycare Center."
             End If
 
             ' Site URL
             If AttributeName = "SiteURL" Then
-                Return "http://Bulldog/illustrate.net"
+                Return "http://Daycare.illustrate.net"
             End If
 
             ' Site Contact
             If AttributeName = "SiteContact" Then
-                Return "Butch Schloemann"
+                Return "Heidi McCullough"
             End If
 
             ' Site Address
             If AttributeName = "Address1" Then
-                Return "1107 s. Main st"
+                Return "8 WILLOUGHBY CT"
             End If
             If AttributeName = "Address2" Then
-                Return "Red Bud, Illinois 62278"
+                Return "ALGONQUIN IL 60102"
             End If
 
             ' Phone
             If AttributeName = "Phone1" Then
-                Return "314-712-3403"
+                Return "(847) 845-6410"
             End If
 
             ' Site Email
             If AttributeName = "SiteEmailContact" Then
-                Return "waterloowrestling@yahoo.com"
+                Return "none@none.com"
             End If
 
             ' Site Sales and Support
             If AttributeName = "SiteEmailSales" Then
-                Return "Sales@example.com"
+                Return "none@none.com"
             End If
             If AttributeName = "SiteEmailSupport" Then
                 Return "Mikish.Vaughn@Gmail.com"
@@ -83,26 +82,26 @@
 
             ' Facebook Page
             If AttributeName = "SiteFacebookPageURL" Then
-                Return "https://www.facebook.com/jessischloemann/"
+                Return ""
             End If
 
             ' Google Maps Location
             If AttributeName = "SiteGoogleMapURL" Then
-                Return "https://www.google.com/maps/place/1107+S+Main+St,+Red+Bud,+IL+62278/@38.201692,-89.9953916,536m/data=!3m1!1e3!4m5!3m4!1s0x88762764bbdbc3e5:0xebb720ff8b455ab2!8m2!3d38.2014852!4d-89.994499"
+                Return "https://www.google.com/maps/place/8+Willoughby+Ct,+Algonquin,+IL+60102/@42.14977,-88.320628,16z/data=!4m5!3m4!1s0x880f0dfecc67645d:0x46cd813aa7f413!8m2!3d42.1497696!4d-88.3206282?hl=en-US"
             End If
 
             ' Site Images
             If AttributeName = "BigLogo" Then
-                Return "/Content/Images/Site/Catagories/Svg/BD-Body.svg"
+                Return "/Content/Images/Site/Catagories/Svg/BlueSun.svg"
             End If
             If AttributeName = "SmallLogo" Then
-                Return "/Content/Images/Site/Catagories/Svg/BD-Head-Right-Smile.svg"
+                Return "/Content/Images/Site/Catagories/Svg/BlueSun.svg"
             End If
             If AttributeName = "PageImage_About" Then
-                Return "/Content/Images/Site/Catagories/PageImages/900x800-image-03.jpg"
+                Return "/Content/Images/Site/Catagories/PageImages/900x800-image-02.jpg"
             End If
             If AttributeName = "LinkShare" Then
-                Return "/Content/Images/Site/Catagories/LinkShares/1200x630-linkshare-01"
+                Return "/Content/Images/Site/Catagories/LinkShares/1200x630-linkshare-02"
             End If
 
         End If
@@ -112,56 +111,61 @@
 
         ' Site Name
         If AttributeName = "SiteName" Then
-            Return "The Mikish Group"
+            Return "The Daycare Center"
         End If
-        If AttributeName = "Mikish" Then
-            Return "Bulldog Wrestling Club"
+        If AttributeName = "SiteNameShort" Then
+            Return "The Daycare Center"
         End If
 
         ' Site Description
         If AttributeName = "SiteDescription" Then
-            Return "This web site is dedicated to the The Mikish Group!"
+            Return "This web site is to provide information on The Daycare Center."
         End If
 
         ' Site URL
         If AttributeName = "SiteURL" Then
-            Return "https://Mikish.com/"
+            Return "http://Daycare.illustrate.net"
         End If
 
         ' Site Contact
         If AttributeName = "SiteContact" Then
-            Return "Mikish Vaughn"
+            Return "Heidi McCullough"
         End If
 
         ' Site Address
         If AttributeName = "Address1" Then
-            Return "Box 12345"
+            Return "8 WILLOUGHBY CT"
         End If
         If AttributeName = "Address2" Then
-            Return "Vandalia, IL 62298 "
+            Return "ALGONQUIN IL 60102"
+        End If
+
+        ' Phone
+        If AttributeName = "Phone1" Then
+            Return "(847) 845-6410"
         End If
 
         ' Site Email
         If AttributeName = "SiteEmailContact" Then
-            Return "Mikish@Mikish.com"
+            Return "none@none.com"
         End If
 
         ' Site Sales and Support
         If AttributeName = "SiteEmailSales" Then
-            Return "Sales@Mikish.com"
+            Return "none@none.com"
         End If
         If AttributeName = "SiteEmailSupport" Then
-            Return "Mikish@Mikish.com"
+            Return "Mikish.Vaughn@Gmail.com"
         End If
 
         ' Facebook Page
         If AttributeName = "SiteFacebookPageURL" Then
-            Return "https://Facebook.com/MikishGroup"
+            Return ""
         End If
 
         ' Google Maps Location
         If AttributeName = "SiteGoogleMapURL" Then
-            Return "https://www.google.com/maps/@38.992257,-89.1196202,286m/data=!3m1!1e3"
+            Return "https://www.google.com/maps/place/8+Willoughby+Ct,+Algonquin,+IL+60102/@42.14977,-88.320628,16z/data=!4m5!3m4!1s0x880f0dfecc67645d:0x46cd813aa7f413!8m2!3d42.1497696!4d-88.3206282?hl=en-US"
         End If
 
         ' Site Images
@@ -204,9 +208,9 @@
         Dim Count As Integer = 1
         Try
             If HttpContext.Current.Request.IsLocal Then
-                Count = IO.Directory.GetFiles("D:\Projects\Repos\Bulldog\Content\Images\Site\Carousel\" + Msg + "\", "*.jpg").Length()
+                Count = IO.Directory.GetFiles("D:\Projects\Repos\Dayare\Content\Images\Site\Carousel\" + Msg + "\", "*.jpg").Length()
             Else
-                Count = IO.Directory.GetFiles("h:\root\home\mikish-001\www\bulldog\content\images\site\Carousel\" + Msg + "\", "*.jpg").Length()
+                Count = IO.Directory.GetFiles("h:\root\home\mikish-001\www\Daycare\content\images\site\Carousel\" + Msg + "\", "*.jpg").Length()
             End If
         Catch ex As Exception
             MsgBox("Image Directory Not Found", MsgBoxStyle.Critical)

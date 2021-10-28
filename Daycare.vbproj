@@ -10,8 +10,8 @@
     <ProjectGuid>{7122EFBF-C9ED-436A-B348-702BF7D1AD3F}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
-    <RootNamespace>Bulldog</RootNamespace>
-    <AssemblyName>Bulldog</AssemblyName>
+    <RootNamespace>Daycare</RootNamespace>
+    <AssemblyName>Daycare</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <OptionExplicit>On</OptionExplicit>
     <OptionCompare>Binary</OptionCompare>
@@ -34,7 +34,7 @@
     <DefineDebug>true</DefineDebug>
     <DefineTrace>true</DefineTrace>
     <OutputPath>bin\</OutputPath>
-    <DocumentationFile>Bulldog.xml</DocumentationFile>
+    <DocumentationFile>Daycare.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
@@ -44,7 +44,7 @@
     <DefineTrace>true</DefineTrace>
     <Optimize>true</Optimize>
     <OutputPath>bin\</OutputPath>
-    <DocumentationFile>Bulldog.xml</DocumentationFile>
+    <DocumentationFile>Daycare.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <ItemGroup>
@@ -236,17 +236,15 @@
     <Content Include="Content\Images\Site\Carousel\About\000005.jpg" />
     <Content Include="Content\Images\Site\Carousel\About\000007.jpg" />
     <Content Include="Content\Images\Site\Carousel\About\000002.jpg" />
-    <Content Include="Content\Images\Site\Catagories\Icons\Bulldog\android-chrome-192x192.png" />
-    <Content Include="Content\Images\Site\Catagories\Icons\Bulldog\android-chrome-512x512.png" />
-    <Content Include="Content\Images\Site\Catagories\Icons\Bulldog\apple-touch-icon.png" />
-    <Content Include="Content\Images\Site\Catagories\Icons\Bulldog\favicon-16x16.png" />
-    <Content Include="Content\Images\Site\Catagories\Icons\Bulldog\favicon-32x32.png" />
-    <Content Include="Content\Images\Site\Catagories\Icons\Bulldog\favicon.ico" />
+    <Content Include="Content\Images\Site\Catagories\Icons\Daycare\android-chrome-192x192.png" />
+    <Content Include="Content\Images\Site\Catagories\Icons\Daycare\android-chrome-512x512.png" />
+    <Content Include="Content\Images\Site\Catagories\Icons\Daycare\apple-touch-icon.png" />
+    <Content Include="Content\Images\Site\Catagories\Icons\Daycare\favicon-16x16.png" />
+    <Content Include="Content\Images\Site\Catagories\Icons\Daycare\favicon-32x32.png" />
+    <Content Include="Content\Images\Site\Catagories\Icons\Daycare\favicon.ico" />
     <Content Include="Content\Images\Site\Catagories\LinkShares\1200x630-linkshare-01.png" />
     <Content Include="Content\Images\Site\Catagories\LinkShares\1200x630-Linkshare-02.jpg" />
-    <Content Include="Content\Images\Site\Catagories\PageImages\900x600-image-01.jpg" />
     <Content Include="Content\Images\Site\Catagories\PageImages\900x600-image-02.jpg" />
-    <Content Include="Content\Images\Site\Catagories\PageImages\900x800-image-01.jpg" />
     <Content Include="Content\Images\Site\Catagories\PageImages\900x800-image-02.jpg" />
     <Content Include="Content\Images\Site\Catagories\PageImages\900X800-image-03.jpg" />
     <Content Include="Content\Images\Site\Catagories\Svg\BD-Body.svg" />

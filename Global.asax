@@ -1,1 +1,1 @@
-﻿<%@ Application Codebehind="Global.asax.vb" Inherits="Bulldog.MvcApplication" Language="VB" %>
+﻿<%@ Application Codebehind="Global.asax.vb" Inherits="Daycare.MvcApplication" Language="VB" %>

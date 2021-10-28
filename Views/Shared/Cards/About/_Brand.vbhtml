@@ -4,8 +4,8 @@
     Dim BigLogo As String = SiteHelpers.GetSiteInfo("BigLogo")
 
     ' Get Site Info
-    Dim siteName1 As String = "Waterloo Bulldog"
-    Dim siteName2 As String = "Wrestling Club"
+    Dim siteName1 As String = "The Daycare Center"
+    Dim siteName2 As String = ""
     Dim siteDescription As String = SiteHelpers.GetSiteInfo("SiteDescription")
 
 End Code
