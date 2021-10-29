@@ -1,6 +1,6 @@
 /* Logos */
 #biglogo {
-    height: 120px;
+    height: 203px;
 }
 
 .brandlogo {
@@ -11,6 +11,14 @@
 .brandlogo2 {
     padding-left: 8px;
     height: 40px;
+}
+
+.sitename {
+color: forestgreen;
+}
+
+.description {
+    color: rgb(207, 129, 8);
 }
 
 #Copyright {

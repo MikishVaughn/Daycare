@@ -1,7 +1,7 @@
 ﻿
-<div class="card text-white bg-dark my-2 py-2">
+<div class="card bg-dark my-2 py-2 noborder">
     <div class="card-body">
-        <p class="text-white m-0 py-1">Playing on a team means learning to work with others and support them. Our goal is to develop the young athletes’ self-confidence, skill, and ability, while introducing them to the competitive sport of wrestling. </p>
-        <p class="text-white m-0 py-2">What parents usually want most is for their children to have fun and be successful at their chosen sport, but the keys to their enjoying their sports experiences lie in your hands, first by helping them choose the right sport, and then by being a good role model for sportsmanship and commitment.</p>
+        <p class="description m-0 py-1">Parents need to know that your child is the center of our attention with focused direction. We strive to have a creative fun filled envirornment for your child to explore.Every child has special needs and we are here to fill them. </p>
+        <p class="description m-0 py-2">What parents usually want most is for their children to have fun and be successful at their chosen tasks, but the keys to their enjoying their experiences lie in your hands, first by choosing the right Center, and then by being a committed partner.</p>
     </div>
  </div>

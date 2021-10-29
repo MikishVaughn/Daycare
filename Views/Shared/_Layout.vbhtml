@@ -99,7 +99,7 @@ End Code
 
 </head>
 
-<body class="bg-dark bg-gradient bg-opacity-50">
+<body class="bg-dark @*bg-gradient bg-opacity-50*@">
 
     <!-- Site Beginning -->
     <div class="container body-content px-0">

@@ -18,16 +18,16 @@ code {
 
 .btn-primary {
     color: #fff;
-    background-color: #60605F;
-    border-color: #3A3A3A;
+    background-color: forestgreen;
+    border-color: rgb(46, 98, 46);
 }
 
     .btn-primary:focus,
     .btn-primary:active,
     .btn-primary:hover {
         color: #000000;
-        background-color: #AEAEAE;
-        border-color: #1E1E1E;
+        background-color: rgb(56, 151, 56);
+        border-color: #0F2A0F;
     }
 
     /* No Border around the Brand box */

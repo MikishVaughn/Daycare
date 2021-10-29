@@ -12,13 +12,13 @@ End Code
 
     <!-- Website Design Card -->
     <div class="pt-lg-5 w-100 text-center">
-        <h6 class="font-weight-bold">Website Design</h6>
+        <h6 class="sitename font-weight-bold">Website Design</h6>
     </div>
 
     <!-- Designer Info -->
     <div class="mb-2" style="max-width: 20em;">
         <div class="w-100 text-center">
-           <a style="color: black;" href="https://mikish.com" target="_blank"><h6><img class="brandlogo" src=@designerLogo alt="brand logo">@siteDesigner</h6></a>
+           <a class="description" href="https://mikish.com" target="_blank"><h6><img class="brandlogo" src=@designerLogo alt="brand logo">@siteDesigner</h6></a>
         </div>                                      
         @*<div class="py-2">Email: <a class="text-black " href="mailto: @siteEmailDesigner">@siteEmailDesigner</a></div>*@       
     </div>

@@ -263,8 +263,7 @@
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>
     </None>
-    <None Include="My Project\PublishProfiles\Bulldog Web Deploy.pubxml" />
-    <None Include="My Project\PublishProfiles\Site 2 - Web Deploy.pubxml" />
+    <None Include="My Project\PublishProfiles\Daycare Web Deploy.pubxml" />
     <None Include="My Project\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <CustomToolNamespace>My</CustomToolNamespace>
@@ -293,6 +292,8 @@
     <Content Include="Views\Shared\_Carousel.vbhtml" />
     <Content Include="Views\Info\Fundraising.vbhtml" />
     <Content Include="Views\Shared\Cards\_Contact.vbhtml" />
+    <Content Include="Views\Info\Features.vbhtml" />
+    <Content Include="Views\Shared\Cards\About\_Features.vbhtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Global.asax" />

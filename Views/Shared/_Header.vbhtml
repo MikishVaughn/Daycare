@@ -16,9 +16,12 @@
     If ViewData("message") = "Schedule" Then
         choice03 = "active"
     End If
-    If ViewData("message") = "Fundraising" Then
+    If ViewData("message") = "Features" Then
         choice04 = "active"
     End If
+    'If ViewData("message") = "Fundraising" Then
+    '    choice04 = "active"
+    'End If
     If ViewData("message") = "Merchandise" Then
         choice05 = "active"
     End If
@@ -67,8 +70,11 @@ End Code
                     <a class="nav-link @choice03" href="~/Info/Schedule">Schedule</a>
                 </li>
                 <li class="nav-item text-light">
-                    <a class="nav-link @choice04" href="~/Info/fundraising">Fundraising</a>
+                    <a class="nav-link @choice04" href="~/Info/features">Features</a>
                 </li>
+                @*<li class="nav-item text-light">
+                    <a class="nav-link @choice04" href="~/Info/fundraising">Fundraising</a>
+                </li>*@
                 <li class="nav-item text-light">
                     <a class="nav-link @choice05" href="~/Merchandise/Store">Merchandise</a>
                 </li>

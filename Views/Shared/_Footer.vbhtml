@@ -20,7 +20,8 @@ End Code
                 <ul>
                     <li class="site-footer__item"><a class="nav-link" href="~/Info/Schedule">Schedule</a></li>
                     <li class="site-footer__item"><a class="nav-link" href="~/Merchandise/Store">Merchandise</a></li>
-                    <li class="site-footer__item"><a class="nav-link" href="~/Info/Fundraising">Fundraising</a></li>
+                    @*<li class="site-footer__item"><a class="nav-link" href="~/Info/Fundraising">Fundraising</a></li>*@
+                    <li class="site-footer__item"><a class="nav-link" href="~/Info/Fundraising">Features</a></li>
                 </ul>
             </div>
 

@@ -200,6 +200,3 @@ function changeBackground(newBackground) {
     $('body').css('background-image', newBackground);
 }
 
-//***********************************************//
-//  Function used by Floaters                    //
-//***********************************************//

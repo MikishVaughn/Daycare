@@ -31,6 +31,12 @@
         ViewData("PageTitle") = ViewData("Message")
         Return View()
     End Function
+    Function Features() As ActionResult
+        ViewData("Message") = "Features"
+        ViewData("PageHeader") = ViewData("Message")
+        ViewData("PageTitle") = ViewData("Message")
+        Return View()
+    End Function
     Function Schedule() As ActionResult
         ViewData("Message") = "Schedule"
         ViewData("PageHeader") = ViewData("Message")

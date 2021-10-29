@@ -1,4 +1,4 @@
-﻿@code 
+﻿@code
 
     Dim siteName As String = SiteHelpers.GetSiteInfo("SiteName")
     Dim siteGoogleMapURL As String = SiteHelpers.GetSiteInfo("SiteGoogleMapURL")
@@ -39,20 +39,19 @@ End Code
 
                 <!-- Facebook Page Button -->
                 <div class="py-1">
-                    <button style="width: 200px; border-radius:8px; padding-left: 20px;text-align: left;" onclick="newTab('@siteFacebookPageURL')">
+                    <button style="border: none; background-color: transparent; width: 200px; border-radius:8px; padding-left: 20px;text-align: left;" onclick="newTab('@siteFacebookPageURL')">
                         <img style="height:32px; width:32px;" src="~/Content/Images/Site/Catagories/Svg/FB-Square.Svg" /> <b>Facebook Page</b>
                     </button>
                 </div>
 
                 <!-- Google Page Button -->
                 <div class="py-1">
-                    <button style="width: 200px; border-radius:8px; padding-left: 20px;text-align: left;" onclick="newTab('@siteGoogleMapURL')">
-                        <img style="height:32px; width:32px;" src="~/Content/Images/Site/Catagories/Svg/Google-Square.svg" /> &nbsp;&nbsp;&nbsp;&nbsp;<b>Google Maps</b>
+                    <button style="border: none; background-color: transparent; width: 200px; border-radius: 8px; padding-left: 20px; text-align: left;" onclick="newTab('@siteGoogleMapURL')">
+                        <img style="height:32px; width:32px;" src="~/Content/Images/Site/Catagories/Svg/Google-Square.svg" /> <b>Google Maps</b>
                     </button>
                 </div>
 
             </div>
         </div>
     </div>
-
 </div>

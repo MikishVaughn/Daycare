@@ -27,8 +27,11 @@ End Code
         <!-- Schedule Card -->
         @Html.Partial("Cards/About/_Schedule")
 
+        <!-- Features Card -->
+        @Html.Partial("Cards/About/_Features")
+
         <!-- Fundraising Card -->
-        @Html.Partial("Cards/About/_Fundraising")
+        @*@Html.Partial("Cards/About/_Fundraising")*@
 
         <!-- Merchandise Card -->
         @Html.Partial("Cards/About/_Merchandise")

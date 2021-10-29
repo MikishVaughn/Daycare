@@ -208,7 +208,7 @@
         Dim Count As Integer = 1
         Try
             If HttpContext.Current.Request.IsLocal Then
-                Count = IO.Directory.GetFiles("D:\Projects\Repos\Dayare\Content\Images\Site\Carousel\" + Msg + "\", "*.jpg").Length()
+                Count = IO.Directory.GetFiles("D:\Projects\Repos\Daycare\Content\Images\Site\Carousel\" + Msg + "\", "*.jpg").Length()
             Else
                 Count = IO.Directory.GetFiles("h:\root\home\mikish-001\www\Daycare\content\images\site\Carousel\" + Msg + "\", "*.jpg").Length()
             End If
